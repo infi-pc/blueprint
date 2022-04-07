@@ -113,9 +113,9 @@ $icons-per-row: 5;
   }
 
   // remove margin on last row of icons
-  &:nth-last-child(-n + $icons-per-row) {
-    margin-bottom: 0;
-  }
+  // &:nth-last-child(-n + $icons-per-row) {
+  //   margin-bottom: 0;
+  // }
 }
 
 .docs-icon-name,

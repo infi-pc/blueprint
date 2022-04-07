@@ -116,14 +116,14 @@ $tree-intent-icon-colors-modern: (
 .#{$ns}-dark {
   .#{$ns}-breadcrumbs {
     > li::after {
-      background: svg-icon("16px/chevron-right.svg", (path: (fill: $pt-dark-icon-color)));
+      // background: svg-icon("16px/chevron-right.svg", (path: (fill: $pt-dark-icon-color)));
     }
   }
   .#{$ns}-breadcrumbs-collapsed {
     background: rgba($gray3, 0.2);
 
     &::before {
-      background: svg-icon("16px/more.svg", (circle: (fill: $pt-dark-icon-color))) center no-repeat;
+      // background: svg-icon("16px/more.svg", (circle: (fill: $pt-dark-icon-color))) center no-repeat;
     }
 
     &:hover {

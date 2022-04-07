@@ -15,6 +15,7 @@
 
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const path = require("path");
+// const webpack = require("webpack");
 
 const { baseConfig } = require("@blueprintjs/webpack-build-scripts");
 
@@ -44,5 +45,13 @@ module.exports = Object.assign({}, baseConfig, {
                 { from: "src/assets/favicon.png", to: "assets" },
             ],
         }),
+        // new webpack.ProvidePlugin({
+        //     process: "process/browser",
+        // }),
     ]),
+    // resolve: Object.assign({}, baseConfig.resolve, {
+    //     fallback: {
+    //         fs: false,
+    //     },
+    // }),
 });

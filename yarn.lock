@@ -6047,6 +6047,12 @@ gonzales-pe@^4.3.0:
   dependencies:
     minimist "^1.2.5"
 
+"gonzales-pe@https://github.com/tonyganch/gonzales-pe.git#dev":
+  version "4.3.0"
+  resolved "https://github.com/tonyganch/gonzales-pe.git#ab2e8ae6142d6fa95b77864f608a8add8abffaec"
+  dependencies:
+    minimist "^1.2.5"
+
 graceful-fs@^4.1.11, graceful-fs@^4.1.15, graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.2.0, graceful-fs@^4.2.2, graceful-fs@^4.2.3, graceful-fs@^4.2.4, graceful-fs@^4.2.6:
   version "4.2.9"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.2.9.tgz#041b05df45755e587a24942279b9d113146e1c96"
