@@ -15,6 +15,8 @@
 
 import * as React from "react";
 import * as ReactDOM from "react-dom";
+// eslint-disable-next-line import/order
+// import resolve from "resolve-path";
 
 // import sass from "sass";
 // @ts-ignore
@@ -27,6 +29,20 @@ import { BlueprintDocs } from "./components/blueprintDocs";
 import data from "./generatedStyles";
 import * as ReactDocs from "./tags/reactDocs";
 import { reactExamples } from "./tags/reactExamples";
+
+function absolute(base: any, relative: any) {
+    const stack = base.split("/");
+    const parts = relative.split("/");
+    stack.pop(); // remove current file name (or empty string)
+    // (omit if "base" is the current folder without trailing slash)
+    // eslint-disable-next-line @typescript-eslint/prefer-for-of
+    for (let i = 0; i < parts.length; i++) {
+        if (parts[i] == ".") continue;
+        if (parts[i] == "..") stack.pop();
+        else stack.push(parts[i]);
+    }
+    return stack.join("/");
+}
 
 Sass.setWorkerUrl("/assets/sass.worker.js");
 // @ts-ignore
@@ -55,19 +71,59 @@ sass.importer((request: any, done: any) => {
     // (string) result.error the error message to print and abort the compilation
     // asynchronous callback
 
-    if (request.current === "~normalize.css/normalize.css") {
-        done({ path: request.current, content: "" });
+    if (
+        request.current === "~normalize.css/normalize.css" ||
+        request.current === "~@blueprintjs/core/src/reset" ||
+        request.current === "generated/16px/blueprint-icons-16" ||
+        request.current === "blueprint-icons-16" ||
+        request.current === "generated/20px/blueprint-icons-20" ||
+        request.current === "blueprint-icons-20"
+        // request.current === "reset"
+    ) {
+        done({ path: request.current, content: "body {}" });
     } else {
+        console.log("IMPORT: ", request);
         // @ts-ignore
-        const content = data[request.path];
+        let content = data[request.current];
+        if (!content) {
+            content = data[request.current + ".scss"];
+        }
+        if (!content) {
+            const parts = request.current.split("/");
+            parts[parts.length - 1] = "_" + parts[parts.length - 1];
+            const name2 = parts.join("/");
+            content = data[name2] || data[name2 + ".scss"];
+        }
+        // if (!content) {
+        //     content = data["~@blueprintjs/core/src/" + request.current.replace("common/", "common/_") + ".scss"];
+        // }
+        if (!content) {
+            const name = absolute(request.previous, request.current);
+            console.log("RESOLVE: ", name);
+            content = data[name];
+        }
+        if (!content) {
+            const name = absolute(request.previous, request.current);
+            const parts = name.split("/");
+            parts[parts.length - 1] = "_" + parts[parts.length - 1];
+            const name2 = parts.join("/");
+            content = data[name2] || data[name2 + ".scss"];
+        }
+        if (!content) {
+            throw new Error("content not found for: " + request.current);
+        }
         console.log("IMPORTING: ", request.current, " exists: ", !!content);
-        done({ path: request.current, content });
+        done({
+            path: request.current[0] === "~" ? request.current : absolute(request.previous, request.current),
+            // eslint-disable-next-line @typescript-eslint/tslint/config
+            content,
+        });
     }
 });
 
 console.log(sass);
 sass.compile(
-    data["packages/docs-app/src/index.scss"],
+    data["~@blueprintjs/docs-app/src/index.scss"],
     // {
     //     // importer: i => {
     //     //     console.log(i);
@@ -84,7 +140,7 @@ sass.compile(
     //     },
     // },
     (res: any) => {
-        console.log("RES:", res);
+        console.log("RESULT:", res);
     },
 );
 

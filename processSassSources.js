@@ -19,11 +19,12 @@ async function process() {
         const f = await fs.readFile(file, "utf8");
         let content = f.toString();
         // console.log(content);
+        const fixedFile = file.replace("packages/", "~@blueprintjs/");
         content = content.replaceAll("{$ns}", "bp4");
-        store[file] = content;
-        console.log("PARSING", file);
-        const parsed = gonzales.parse(content, { syntax: "scss" });
-        console.log("P:", parsed);
+        store[fixedFile] = content;
+        console.log("PARSING", fixedFile);
+        // const parsed = gonzales.parse(content, { syntax: "scss" });
+        // console.log("P:", parsed);
     }
     await fs.writeFile("./packages/docs-app/src/generatedStyles.ts", `export default ${JSON.stringify(store)} as any`);
     console.log("done");

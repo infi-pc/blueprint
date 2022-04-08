@@ -90,7 +90,7 @@ $icons-per-row: 5;
   padding: ($pt-grid-size * 2) 0;
 
   transition: background-color $hover-transition;
-  width: math.div(100%, $icons-per-row);
+  width: (100% / $icons-per-row);
 
   .docs-icon-svg {
     max-height: $svg-icon-size;
