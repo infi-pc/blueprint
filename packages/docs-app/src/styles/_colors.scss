@@ -14,7 +14,7 @@ $swatch-hover-message: "Click to copy hex code";
 $swatch-copied-message: "#{map-get($blueprint-icon-codepoints, "tick")} Copied to clipboard";
 
 @function palette-width($columns) {
-  @return math.div(102% - 2% * $columns, $columns);
+  @return ((102% - 2% * $columns) / $columns);
 }
 
 .docs-clipboard {

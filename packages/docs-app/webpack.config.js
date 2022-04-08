@@ -15,6 +15,7 @@
 
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const path = require("path");
+// const webpack = require("webpack");
 
 const { baseConfig } = require("@blueprintjs/webpack-build-scripts");
 
@@ -26,7 +27,7 @@ module.exports = Object.assign({}, baseConfig, {
             "./polyfill.js",
             // bundle entry points
             "./src/index.tsx",
-            "./src/index.scss",
+            // "./src/index.scss",
         ],
     },
 
@@ -44,5 +45,32 @@ module.exports = Object.assign({}, baseConfig, {
                 { from: "src/assets/favicon.png", to: "assets" },
             ],
         }),
+        // new webpack.ProvidePlugin({
+        //     process: "process/browser",
+        // }),
     ]),
+    // loaders: Object.assign({}, baseConfig.loaders, {
+    //     test: /\.(ttf|eot|svg)$/,
+    //     use: {
+    //       loader: 'file-loader',
+    //       options: {
+    //         name: 'fonts/[hash].[ext]',
+    //       },
+    //     },
+    //   },
+    //   {
+    //     test: /\.(woff|woff2)$/,
+    //     use: {
+    //       loader: 'url-loader',
+    //       options: {
+    //       name: 'fonts/[hash].[ext]',
+    //       limit: 5000,
+    //       mimetype: 'application/font-woff',
+    //     },
+    //   }),
+    // resolve: Object.assign({}, baseConfig.resolve, {
+    //     fallback: {
+    //         fs: false,
+    //     },
+    // }),
 });

@@ -5,19 +5,128 @@ Licensed under the Apache License, Version 2.0.
 
 */
 
+// Overwriting Core colors
+$indigo0: #1c1040;
+$indigo1: #4929a6;
+$indigo2: #5430bf;
+$indigo3: #5f36d9;
+$indigo4: #7d55f2;
+$indigo5: #9673ff;
+$indigo6: #bca6ff;
+$indigo7: #f5f2ff;
+
+$green0: #034003;
+$green1: #067306;
+$green2: #078c07;
+$green3: #08a608;
+$green4: #1dbf1d;
+$green5: #36d936;
+$green6: #6df26d;
+$green7: #f2fff2;
+
+$gold5: #ffc940;
+$gold6: #ffd773;
+$gold7: #fff4d9;
+
+$dark-gray1: #1b2023;
+$dark-gray2: #242a2f;
+$dark-gray3: #2f363c;
+$dark-gray4: #363f47;
+$dark-gray5: #404a52;
+
+$gray1: #6d6e6f;
+$gray2: #848484;
+$gray3: #999;
+$gray4: #b2b5b7;
+$gray5: #c7cbce;
+
+$light-gray1: #d5d7d9;
+$light-gray2: #dee0e2;
+$light-gray3: #e5e7e9;
+$light-gray4: #eef0f2;
+$light-gray5: #f7f8f8;
+
+// Overwriting intent variables
+$pt-intent-primary: $indigo3;
+$pt-intent-success: #0f9960;
+$pt-intent-warning: #d9822b;
+$pt-intent-danger: #db3737;
+
+$pt-intent-primary1: $indigo1;
+$pt-intent-success1: #0a6640;
+$pt-intent-warning1: #a66321;
+$pt-intent-danger1: #a82a2a;
+
+$pt-intent-primary2: $indigo2;
+$pt-intent-success2: #0d8050;
+$pt-intent-warning2: #bf7326;
+$pt-intent-danger2: #c23030;
+
+$pt-intent-text-colors: (
+  "primary": $indigo2,
+  "success": #0d8050,
+  "warning": #bf7326,
+  "danger": #c23030,
+);
+
+// Overwriting link and selection colors
+$pt-link-color: $indigo3;
+$pt-dark-link-color: $indigo5;
+$pt-text-selection-color: hsla(250, 100%, 80%, 0.3);
+
+// Overwriting button "intent": default, hover, active colors)
+$button-intents: (
+  "primary": (
+    $pt-intent-primary,
+    $pt-intent-primary2,
+    $pt-intent-primary1,
+  ),
+  "success": (
+    $pt-intent-success,
+    $pt-intent-success2,
+    $pt-intent-success1,
+  ),
+  "warning": (
+    $pt-intent-success,
+    $pt-intent-success2,
+    $pt-intent-success1,
+  ),
+  "danger": (
+    $pt-intent-danger,
+    $pt-intent-danger2,
+    $pt-intent-danger1,
+  ),
+);
+
+//Overwriting other styles
+$pt-font-family: "InterVariable", "Inter", "Icons16", sans-serif;
+
+/* $pt-grid-size: 8px !default; needs revisit */
+
+$icon-font-path: "~@blueprintjs/icons/resources/icons";
+
 @import "~normalize.css/normalize.css";
 
+// TODO import sass
+
+
+@import "~@blueprintjs/core/src/blueprint.scss";
+@import "~@blueprintjs/icons/src/blueprint-icons.scss";
+@import "~@blueprintjs/datetime/src/blueprint-datetime.scss";
+@import "~@blueprintjs/popover2/src/blueprint-popover2.scss";
+
 // import these first because they're the base layer
-@import "~@blueprintjs/core/lib/css/blueprint.css";
-@import "~@blueprintjs/datetime/lib/css/blueprint-datetime.css";
-@import "~@blueprintjs/icons/lib/css/blueprint-icons.css";
-@import "~@blueprintjs/popover2/lib/css/blueprint-popover2.css";
-@import "~@blueprintjs/select/lib/css/blueprint-select.css";
-@import "~@blueprintjs/table/lib/css/table.css";
-@import "~@blueprintjs/timezone/lib/css/blueprint-timezone.css";
+// @import "~@blueprintjs/core/lib/css/blueprint.css";
+// @import "~@blueprintjs/datetime/lib/css/blueprint-datetime.css";
+// @import "~@blueprintjs/icons/lib/css/blueprint-icons.css";
+// @import "~@blueprintjs/popover2/lib/css/blueprint-popover2.css";
+
+// @import "~@blueprintjs/select/lib/css/blueprint-select.css";
+// @import "~@blueprintjs/table/lib/css/table.css";
+// @import "~@blueprintjs/timezone/lib/css/blueprint-timezone.css";
 
 // then the docs theme styles
-@import "~@blueprintjs/docs-theme/lib/css/docs-theme.css";
+// @import "~@blueprintjs/docs-theme/lib/css/docs-theme.css";
 @import "~@blueprintjs/docs-theme/src/styles/variables";
 
 // then our own styles
