@@ -6,7 +6,7 @@ Licensed under the Apache License, Version 2.0.
 */
 
 // Import files in the same order that they are documented in the docs
-@import "~@blueprintjs/colors/lib/scss/colors";
+@import "~@blueprint-modernized/colors/lib/scss/colors";
 @import "common/variables";
 @import "common/mixins";
 
@@ -16,28 +16,23 @@ Licensed under the Apache License, Version 2.0.
 @import "dark-theme";
 
 // Button variables and overrides
-$button-active-minimal-intent-text-modern: (
-  "primary": $blue1,
+$button-active-minimal-intent-text-modern: ("primary": $blue1,
   "success": $green1,
   "warning": $orange1,
-  "danger": $red1
-);
+  "danger": $red1);
 
-$dark-minimal-button-intents-modern: (
-  "primary": (rgba($blue3, 0.2), $blue5, rgba($blue3, 0.3), $blue6),
+$dark-minimal-button-intents-modern: ("primary": (rgba($blue3, 0.2), $blue5, rgba($blue3, 0.3), $blue6),
   "success": (rgba($green3, 0.2), $green5, rgba($green3, 0.3), $green6),
   "warning": (rgba($orange3, 0.2), $orange5, rgba($orange3, 0.3), $orange6),
-  "danger": (rgba($red3, 0.2), $red5, rgba($red3, 0.3), $red6)
-);
+  "danger": (rgba($red3, 0.2), $red5, rgba($red3, 0.3), $red6));
 
 // Editable text variable overrides
 $input-placeholder-color: $gray1;
 $dark-input-placeholder-color: $gray4;
 
 // Slider variable overrides
-$button-box-shadow-overlay:
-  0 0 0 1px rgba($black, 0.5),
-  0 1px 1px rgba($black, 0.5);
+$button-box-shadow-overlay: 0 0 0 1px rgba($black, 0.5),
+0 1px 1px rgba($black, 0.5);
 
 // Switch variable overrides
 $switch-indicator-background-color: rgba($gray3, 0.3);
@@ -45,38 +40,29 @@ $switch-checked-background-color-hover: $blue2;
 $switch-checked-background-color-active: $blue1;
 
 // Tag variables
-$tag-intent-colors-modern: (
-  "primary": ($pt-intent-primary, $blue2, $blue1, $white, $white),
+$tag-intent-colors-modern: ("primary": ($pt-intent-primary, $blue2, $blue1, $white, $white),
   "success": ($pt-intent-success, $green2, $green1, $white, $white),
   "warning": ($orange5, $orange4, $orange3, $pt-text-color, $pt-text-color),
-  "danger": ($pt-intent-danger, $red2, $red1, $white, $white)
-);
+  "danger": ($pt-intent-danger, $red2, $red1, $white, $white));
 
-$minimal-tag-intent-colors-modern: (
-  "primary": ($pt-intent-primary, $blue2, $blue1, $blue1),
+$minimal-tag-intent-colors-modern: ("primary": ($pt-intent-primary, $blue2, $blue1, $blue1),
   "success": ($pt-intent-success, $green2, $green1, $green1),
   "warning": ($pt-intent-warning, $orange2, $orange1, $orange1),
-  "danger": ($pt-intent-danger, $red2, $red1, $red1)
-);
+  "danger": ($pt-intent-danger, $red2, $red1, $red1));
 
-$minimal-dark-tag-intent-colors-modern: (
-  "primary": ($pt-intent-primary, $blue5, $blue6, $blue6),
+$minimal-dark-tag-intent-colors-modern: ("primary": ($pt-intent-primary, $blue5, $blue6, $blue6),
   "success": ($pt-intent-success, $green5, $green6, $green6),
   "warning": ($pt-intent-warning, $orange5, $orange6, $orange6),
-  "danger": ($pt-intent-danger, $red5, $red6, $red6)
-);
+  "danger": ($pt-intent-danger, $red5, $red6, $red6));
 
 // Toast variables
-$toast-intent-button-colors-modern: (
-  "primary": ($pt-intent-primary, $white, $blue2, $blue1, rgba($white, 0.7)),
+$toast-intent-button-colors-modern: ("primary": ($pt-intent-primary, $white, $blue2, $blue1, rgba($white, 0.7)),
   "success": ($pt-intent-success, $white, $green2, $green1, rgba($white, 0.7)),
   "warning": ($orange5, $dark-gray1, $orange4, $orange3, rgba($dark-gray1, 0.7)),
-  "danger": ($pt-intent-danger, $white, $red2, $red1, rgba($white, 0.7))
-);
+  "danger": ($pt-intent-danger, $white, $red2, $red1, rgba($white, 0.7)));
 
 // Tree variables
-$tree-intent-icon-colors-modern: (
-  "primary": $blue5,
+$tree-intent-icon-colors-modern: ("primary": $blue5,
   "success": $green5,
   "warning": $orange5,
   "danger" : $red5,
@@ -86,12 +72,10 @@ $tree-intent-icon-colors-modern: (
 @import "components/index";
 
 // Mixin helpers used across multiple components
-@mixin pt-button-minimal-dark-intent-modern(
-  $hover-color,
+@mixin pt-button-minimal-dark-intent-modern($hover-color,
   $hover-text,
   $active-color,
-  $active-text
-) {
+  $active-text) {
   &:hover:not(:disabled):not(.#{$ns}-disabled) {
     background: $hover-color;
     color: $hover-text;
@@ -115,10 +99,11 @@ $tree-intent-icon-colors-modern: (
 
 .#{$ns}-dark {
   .#{$ns}-breadcrumbs {
-    > li::after {
+    >li::after {
       background: svg-icon("16px/chevron-right.svg", (path: (fill: $pt-dark-icon-color)));
     }
   }
+
   .#{$ns}-breadcrumbs-collapsed {
     background: rgba($gray3, 0.2);
 
@@ -134,12 +119,13 @@ $tree-intent-icon-colors-modern: (
 
 // Contrast for buttons
 .#{$ns}-button {
+
   // Use dark text for warning intent
   &.#{$ns}-intent-warning {
     background: $orange5;
     color: $pt-text-color;
 
-    &:not(.#{$ns}-disabled).#{$ns}-icon > svg {
+    &:not(.#{$ns}-disabled).#{$ns}-icon>svg {
       fill: rgba($dark-gray1, 0.7);
     }
 
@@ -171,7 +157,7 @@ $tree-intent-icon-colors-modern: (
       background: none;
 
       .#{$ns}-dark & {
-        &:not(.#{$ns}-disabled).#{$ns}-icon > svg {
+        &:not(.#{$ns}-disabled).#{$ns}-icon>svg {
           fill: $orange5;
         }
       }
@@ -185,10 +171,10 @@ $tree-intent-icon-colors-modern: (
       }
     }
 
-    @each $intent, $colors in $button-intents {
+    @each $intent,
+    $colors in $button-intents {
       &.#{$ns}-intent-#{$intent} {
-        @include pt-button-minimal-intent-modern(
-          map-get($button-active-minimal-intent-text-modern, $intent),
+        @include pt-button-minimal-intent-modern(map-get($button-active-minimal-intent-text-modern, $intent),
         );
       }
     }
@@ -198,7 +184,8 @@ $tree-intent-icon-colors-modern: (
         color: $white;
       }
 
-      @each $intent, $color in $dark-minimal-button-intents-modern {
+      @each $intent,
+      $color in $dark-minimal-button-intents-modern {
         &.#{$ns}-intent-#{$intent} {
           @include pt-button-minimal-dark-intent-modern($color...);
         }
@@ -214,12 +201,13 @@ $tree-intent-icon-colors-modern: (
   .#{$ns}-dark & {
     background-color: rgba($gray3, 0.2);
 
-    &.#{$ns}-callout-icon:not([class*="#{$ns}-intent-"]) > .#{$ns}-icon:first-child {
+    &.#{$ns}-callout-icon:not([class*="#{$ns}-intent-"])>.#{$ns}-icon:first-child {
       color: $pt-dark-icon-color;
     }
   }
 
-  @each $intent, $color in $pt-intent-colors {
+  @each $intent,
+  $color in $pt-intent-colors {
     &.#{$ns}-intent-#{$intent} {
       background-color: rgba($color, 0.1);
 
@@ -280,13 +268,12 @@ table.#{$ns}-html-table {
 
 // Contrast for tags
 .#{$ns}-tag {
-  @mixin pt-tag-modern(
-    $background-color,
+
+  @mixin pt-tag-modern($background-color,
     $hover-color,
     $active-color,
     $text-color,
-    $cross-button-color
-  ) {
+    $cross-button-color) {
     background: $background-color;
     color: $text-color;
 
@@ -300,7 +287,7 @@ table.#{$ns}-html-table {
       }
     }
 
-    .#{$ns}-tag-remove > .#{$ns}-icon:first-child {
+    .#{$ns}-tag-remove>.#{$ns}-icon:first-child {
       color: rgba($cross-button-color, 0.7);
 
       &:hover {
@@ -313,12 +300,10 @@ table.#{$ns}-html-table {
     }
   }
 
-  @mixin pt-tag-minimal-intent-modern(
-    $background-color,
+  @mixin pt-tag-minimal-intent-modern($background-color,
     $text-color,
     $hover-text-color,
-    $active-text-color
-  ) {
+    $active-text-color) {
     background-color: rgba($background-color, 0.1);
     color: $text-color;
 
@@ -334,7 +319,7 @@ table.#{$ns}-html-table {
       }
     }
 
-    .#{$ns}-tag-remove > .#{$ns}-icon:first-child {
+    .#{$ns}-tag-remove>.#{$ns}-icon:first-child {
       color: $text-color;
 
       &:hover {
@@ -347,8 +332,7 @@ table.#{$ns}-html-table {
     }
   }
 
-  @mixin pt-tag-minimal-dark-intent-modern (
-    $background-color,
+  @mixin pt-tag-minimal-dark-intent-modern ($background-color,
     $text-color,
     $hover-text-color,
     $active-text-color,
@@ -369,7 +353,7 @@ table.#{$ns}-html-table {
         }
       }
 
-      .#{$ns}-tag-remove > .#{$ns}-icon:first-child {
+      .#{$ns}-tag-remove>.#{$ns}-icon:first-child {
         color: $text-color;
 
         &:hover {
@@ -387,6 +371,7 @@ table.#{$ns}-html-table {
   color: $white;
 
   .#{$ns}-tag-remove {
+
     &,
     &:hover,
     &:active {
@@ -404,7 +389,7 @@ table.#{$ns}-html-table {
     }
   }
 
-  .#{$ns}-tag-remove > .#{$ns}-icon:first-child {
+  .#{$ns}-tag-remove>.#{$ns}-icon:first-child {
     color: rgba($white, 0.7);
 
     &:hover {
@@ -431,7 +416,7 @@ table.#{$ns}-html-table {
       }
     }
 
-    .#{$ns}-tag-remove > .#{$ns}-icon:first-child {
+    .#{$ns}-tag-remove>.#{$ns}-icon:first-child {
       color: rgba($dark-gray1, 0.7);
 
       &:hover {
@@ -445,7 +430,8 @@ table.#{$ns}-html-table {
   }
 
   // Light mode contrast for intents
-  @each $intent, $color in $tag-intent-colors-modern {
+  @each $intent,
+  $color in $tag-intent-colors-modern {
     &.#{$ns}-intent-#{$intent} {
       @include pt-tag-modern($color...);
     }
@@ -469,7 +455,7 @@ table.#{$ns}-html-table {
       }
     }
 
-    .#{$ns}-tag-remove > .#{$ns}-icon:first-child {
+    .#{$ns}-tag-remove>.#{$ns}-icon:first-child {
       color: $gray1;
 
       &:hover {
@@ -498,7 +484,7 @@ table.#{$ns}-html-table {
         }
       }
 
-      .#{$ns}-tag-remove > .#{$ns}-icon:first-child {
+      .#{$ns}-tag-remove>.#{$ns}-icon:first-child {
         color: $gray4;
 
         &:hover {
@@ -511,13 +497,15 @@ table.#{$ns}-html-table {
       }
     }
 
-    @each $intent, $color in $minimal-tag-intent-colors-modern {
+    @each $intent,
+    $color in $minimal-tag-intent-colors-modern {
       &.#{$ns}-intent-#{$intent} {
         @include pt-tag-minimal-intent-modern($color...);
       }
     }
 
-    @each $intent, $color in $minimal-dark-tag-intent-colors-modern {
+    @each $intent,
+    $color in $minimal-dark-tag-intent-colors-modern {
       &.#{$ns}-intent-#{$intent} {
         @include pt-tag-minimal-dark-intent-modern($color...);
       }
@@ -527,10 +515,10 @@ table.#{$ns}-html-table {
 
 // Contrast for toasts
 .#{$ns}-toast {
+
   // HACK needs !important to override the existing hack
   /* stylelint-disable declaration-no-important */
-  @mixin pt-toast-intent-button-colors-modern (
-    $background-color,
+  @mixin pt-toast-intent-button-colors-modern ($background-color,
     $text-color,
     $hover-color,
     $active-color,
@@ -554,16 +542,18 @@ table.#{$ns}-html-table {
         color: $text-color !important;
       }
 
-      &:last-child > .#{$ns}-icon-cross {
+      &:last-child>.#{$ns}-icon-cross {
         color: rgba($text-color, 0.7) !important;
       }
     }
   }
+
   /* stylelint-enable declaration-no-important */
 
 
   // Contrast for default intent
   &:not([class*="#{$ns}-intent-"]) {
+
     // Contrast for default intent in dark mode
     &.#{$ns}-dark,
     .#{$ns}-dark & {
@@ -578,7 +568,8 @@ table.#{$ns}-html-table {
     color: $dark-gray1;
   }
 
-  @each $intent, $color in $toast-intent-button-colors-modern {
+  @each $intent,
+  $color in $toast-intent-button-colors-modern {
     &.#{$ns}-intent-#{$intent} {
       @include pt-toast-intent-button-colors-modern($color...);
     }
@@ -598,14 +589,16 @@ table.#{$ns}-html-table {
   }
 
   .#{$ns}-dark & .#{$ns}-icon {
-    @each $intent, $color in $tree-intent-icon-colors-modern {
+
+    @each $intent,
+    $color in $tree-intent-icon-colors-modern {
       &.#{$ns}-intent-#{$intent} {
         color: $color;
       }
     }
   }
 
-  .#{$ns}-tree-node.#{$ns}-tree-node-selected > & {
+  .#{$ns}-tree-node.#{$ns}-tree-node-selected>& {
     #{$icon-classes} {
       color: $white;
     }

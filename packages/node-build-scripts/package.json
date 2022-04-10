@@ -1,7 +1,7 @@
 {
-    "name": "@blueprintjs/node-build-scripts",
+    "name": "@blueprint-modernized/node-build-scripts",
     "version": "4.0.2",
-    "description": "Node.js build scripts for @blueprintjs packages",
+    "description": "Node.js build scripts for @blueprint-modernized packages",
     "scripts": {
         "test": "exit 0"
     },

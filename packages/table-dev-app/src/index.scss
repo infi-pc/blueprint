@@ -2,9 +2,9 @@
 // Licensed under the Apache License, Version 2.0.
 
 @import "~normalize.css/normalize.css";
-@import "~@blueprintjs/core/lib/css/blueprint.css";
-@import "~@blueprintjs/icons/lib/css/blueprint-icons.css";
-@import "~@blueprintjs/table/src/table";
+@import "~@blueprint-modernized/core/lib/css/blueprint.css";
+@import "~@blueprint-modernized/icons/lib/css/blueprint-icons.css";
+@import "~@blueprint-modernized/table/src/table";
 
 // TODO: convert below CSS to SCSS
 /* stylelint-disable */
@@ -92,7 +92,8 @@ body.#{$ns}-dark {
 
 .#{$ns}-dark .sidebar {
   background-color: #202B33;
-  box-shadow: 0 0 0 1px #182026; /* override pt-elevation-0 styles */
+  box-shadow: 0 0 0 1px #182026;
+  /* override pt-elevation-0 styles */
   z-index: 1;
 }
 
@@ -118,7 +119,7 @@ body.#{$ns}-dark {
 }
 
 .#{$ns}-dark .sidebar h4 {
-  border-top-color:#182026;
+  border-top-color: #182026;
   color: #A7B6C2;
 }
 
@@ -130,7 +131,7 @@ body.#{$ns}-dark {
   margin-left: 15px;
 }
 
-.sidebar > .#{$ns}-button + .#{$ns}-button {
+.sidebar>.#{$ns}-button+.#{$ns}-button {
   margin-top: 3px;
 }
 
@@ -176,12 +177,14 @@ label.tbl-select-label {
 }
 
 .tbl-custom-column-header-type {
-  color: #5C7080; /* $gray1 */
+  color: #5C7080;
+  /* $gray1 */
   font-family: "Courier", monospace;
   font-size: 12px;
   margin-top: 3px;
 }
 
 .#{$ns}-dark .tbl-custom-column-header-type {
-  color: #BFCCD6; /* $gray5 */
+  color: #BFCCD6;
+  /* $gray5 */
 }

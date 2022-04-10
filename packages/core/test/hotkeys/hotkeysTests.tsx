@@ -21,7 +21,7 @@ import { mount, ReactWrapper } from "enzyme";
 import * as React from "react";
 import { SinonSpy, spy } from "sinon";
 
-import { dispatchTestKeyboardEvent, expectPropValidationError } from "@blueprintjs/test-commons";
+import { dispatchTestKeyboardEvent, expectPropValidationError } from "@blueprint-modernized/test-commons";
 
 import {
     Classes,

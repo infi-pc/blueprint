@@ -1,25 +1,22 @@
 // Copyright 2016 Palantir Technologies, Inc. All rights reserved.
 
-@import "~@blueprintjs/colors/lib/scss/colors";
-@import "~@blueprintjs/core/src/common/variables";
+@import "~@blueprint-modernized/colors/lib/scss/colors";
+@import "~@blueprint-modernized/core/src/common/variables";
 
 // TODO: use Blueprint intents instead of duplicating...
-$pt-intent-colors: (
-  "primary": $pt-intent-primary,
+$pt-intent-colors: ("primary": $pt-intent-primary,
   "success": $pt-intent-success,
   "warning": $pt-intent-warning,
   "danger" : $pt-intent-danger,
 );
 
-$pt-intent-text-colors: (
-  "primary": $pt-intent-primary,
+$pt-intent-text-colors: ("primary": $pt-intent-primary,
   "success": $pt-intent-success,
   "warning": $pt-intent-warning,
   "danger" : $pt-intent-danger,
 );
 
-$pt-dark-intent-text-colors: (
-  "primary": $blue4,
+$pt-dark-intent-text-colors: ("primary": $blue4,
   "success": $green4,
   "warning": $orange4,
   "danger" : $red4,
@@ -56,4 +53,4 @@ $action-cursor: pointer !default;
 Z-index layers
 */
 $region-layer-z-index: $pt-z-index-overlay !default;
-$interactive-cell-z-index: $pt-z-index-overlay + 1 !default;
+$interactive-cell-z-index: $pt-z-index-overlay+1 !default;

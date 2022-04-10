@@ -1,7 +1,7 @@
 {
-    "name": "@blueprintjs/table-dev-app",
+    "name": "@blueprint-modernized/table-dev-app",
     "version": "4.1.2",
-    "description": "Dev application for @blueprintjs/table",
+    "description": "Dev application for @blueprint-modernized/table",
     "private": true,
     "scripts": {
         "bundle": "webpack --config ./webpack.config.js",
@@ -16,8 +16,8 @@
         "verify": "npm-run-all -p dist lint"
     },
     "dependencies": {
-        "@blueprintjs/core": "^4.1.2",
-        "@blueprintjs/table": "^4.1.2",
+        "@blueprint-modernized/core": "^4.1.2",
+        "@blueprint-modernized/table": "^4.1.2",
         "classnames": "^2.2.6",
         "dom4": "^2.1.5",
         "lodash-es": "^4.17.15",
@@ -26,7 +26,7 @@
         "react-dom": "^16.14.0"
     },
     "devDependencies": {
-        "@blueprintjs/webpack-build-scripts": "^3.2.1",
+        "@blueprint-modernized/webpack-build-scripts": "^3.2.1",
         "@types/lodash-es": "~4.17.3",
         "copy-webpack-plugin": "^7.0.0",
         "npm-run-all": "^4.1.5",

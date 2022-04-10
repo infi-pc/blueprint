@@ -97,7 +97,7 @@ const scssLoaders = [
         loader: require.resolve("sass-loader"),
         options: {
             sassOptions: {
-                functions: require("@blueprintjs/core/scripts/sass-custom-functions"),
+                functions: require("@blueprint-modernized/core/scripts/sass-custom-functions"),
             },
         },
     },

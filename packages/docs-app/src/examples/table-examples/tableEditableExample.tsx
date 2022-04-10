@@ -16,9 +16,9 @@
 
 import * as React from "react";
 
-import { Intent } from "@blueprintjs/core";
-import { Example, IExampleProps } from "@blueprintjs/docs-theme";
-import { Column, ColumnHeaderCell, EditableCell2, EditableName, Table2 } from "@blueprintjs/table";
+import { Intent } from "@blueprint-modernized/core";
+import { Example, IExampleProps } from "@blueprint-modernized/docs-theme";
+import { Column, ColumnHeaderCell, EditableCell2, EditableName, Table2 } from "@blueprint-modernized/table";
 
 export interface ITableEditableExampleState {
     columnNames?: string[];

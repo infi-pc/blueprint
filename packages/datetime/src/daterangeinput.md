@@ -22,7 +22,7 @@ callbacks. See [date formatting](#datetime/dateinput.date-formatting) for more
 information on these props.
 
 ```tsx
-import { DateRangeInput } from "@blueprintjs/datetime";
+import { DateRangeInput } from "@blueprint-modernized/datetime";
 
 <DateRangeInput
     formatDate={date => date.toLocaleString()}

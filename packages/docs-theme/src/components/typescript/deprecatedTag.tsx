@@ -16,7 +16,7 @@
 
 import * as React from "react";
 
-import { Intent, Tag } from "@blueprintjs/core";
+import { Intent, Tag } from "@blueprint-modernized/core";
 
 export const DeprecatedTag: React.FC<{ isDeprecated: boolean | string | undefined }> = ({ isDeprecated }) => {
     if (isDeprecated === true || typeof isDeprecated === "string") {

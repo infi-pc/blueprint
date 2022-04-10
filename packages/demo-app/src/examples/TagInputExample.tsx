@@ -14,7 +14,7 @@ limitations under the License.*/
 
 import * as React from "react";
 
-import { Intent, TagInput, TagProps } from "@blueprintjs/core";
+import { Intent, TagInput, TagProps } from "@blueprint-modernized/core";
 
 import { ExampleCard } from "./ExampleCard";
 

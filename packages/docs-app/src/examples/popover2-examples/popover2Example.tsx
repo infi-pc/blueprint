@@ -32,14 +32,14 @@ import {
     RadioGroup,
     Slider,
     Switch,
-} from "@blueprintjs/core";
+} from "@blueprint-modernized/core";
 import {
     Example,
     handleBooleanChange,
     handleNumberChange,
     handleValueChange,
     IExampleProps,
-} from "@blueprintjs/docs-theme";
+} from "@blueprint-modernized/docs-theme";
 import {
     Classes,
     Popover2SharedProps,
@@ -48,7 +48,7 @@ import {
     Popover2,
     Popover2InteractionKind,
     StrictModifierNames,
-} from "@blueprintjs/popover2";
+} from "@blueprint-modernized/popover2";
 
 import FilmSelect from "../../common/filmSelect";
 

@@ -18,7 +18,7 @@ import { isTag, ITsMethod, ITsParameter, ITsSignature } from "@documentalist/cli
 import classNames from "classnames";
 import * as React from "react";
 
-import { Code, Intent, Props, Tag } from "@blueprintjs/core";
+import { Code, Intent, Props, Tag } from "@blueprint-modernized/core";
 
 import { DocumentationContextTypes, IDocumentationContext } from "../../common/context";
 import { ModifierTable } from "../modifierTable";

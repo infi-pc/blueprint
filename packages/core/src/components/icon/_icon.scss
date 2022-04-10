@@ -1,11 +1,10 @@
 // Copyright 2015 Palantir Technologies, Inc. All rights reserved.
 // Licensed under the Apache License, Version 2.0.
 
-@import "~@blueprintjs/icons/lib/scss/variables";
+@import "~@blueprint-modernized/icons/lib/scss/variables";
 @import "icon-mixins";
 
-$icon-classes: (
-  ".#{$ns}-icon",
+$icon-classes: (".#{$ns}-icon",
   ".#{$ns}-icon-standard",
   ".#{$ns}-icon-large"
 ) !default;
@@ -28,7 +27,7 @@ $icon-classes: (
     /* stylelint-enable */
   }
 
-  > svg {
+  >svg {
     // prevent extra vertical whitespace
     display: block;
 
@@ -41,7 +40,9 @@ $icon-classes: (
 
 // intent support for both SVG and font icons
 #{$icon-classes} {
-  @each $intent, $color in $pt-intent-text-colors {
+
+  @each $intent,
+  $color in $pt-intent-text-colors {
     &.#{$ns}-intent-#{$intent} {
       color: $color;
 
@@ -79,7 +80,8 @@ span.#{$ns}-icon:empty {
   }
 }
 
-@each $name, $codepoint in $blueprint-icon-codepoints {
+@each $name,
+$codepoint in $blueprint-icon-codepoints {
   .#{$ns}-icon-#{$name}::before {
     content: $codepoint;
   }

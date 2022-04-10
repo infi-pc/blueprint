@@ -6,7 +6,7 @@ process.
 
 <div class="@ns-callout @ns-intent-success @ns-icon-info-sign">
 
-The [`Select`](#select/multi-select) component in the [**@blueprintjs/select**](#select)
+The [`Select`](#select/multi-select) component in the [**@blueprint-modernized/select**](#select)
 package provides a React alternative to the native HTML `<select>` tag. Notably, it
 supports custom filtering logic and item rendering.
 

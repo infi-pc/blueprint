@@ -12,7 +12,7 @@ This package contains components relating to handling and selecting Timezones. I
 ## Installation
 
 ```
-npm install --save @blueprintjs/timezone
+npm install --save @blueprint-modernized/timezone
 ```
 
 ### [Full Documentation](http://blueprintjs.com/docs) | [Source Code](https://github.com/palantir/blueprint)

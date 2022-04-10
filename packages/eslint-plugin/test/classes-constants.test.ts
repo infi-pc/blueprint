@@ -40,7 +40,7 @@ ruleTester.run("classes-constants", classesConstantsRule, {
             code: dedent`<div className="pt-fill" />`,
             errors: [{ messageId: "useBlueprintClasses", column: 16, line: 1 }],
             output: dedent`
-                import { Classes } from "@blueprintjs/core";
+                import { Classes } from "@blueprint-modernized/core";
 
                 <div className={Classes.FILL} />
             `,
@@ -50,7 +50,7 @@ ruleTester.run("classes-constants", classesConstantsRule, {
             code: `<div className="pt-fill and-some-other-things" />`,
             errors: [{ messageId: "useBlueprintClasses", column: 16, line: 1 }],
             output: dedent`
-                import { Classes } from "@blueprintjs/core";
+                import { Classes } from "@blueprint-modernized/core";
 
                 <div className={${"`${Classes.FILL} and-some-other-things`"}} />
             `,
@@ -61,7 +61,7 @@ ruleTester.run("classes-constants", classesConstantsRule, {
             code: `<div className={"pt-fill"} />`,
             errors: [{ messageId: "useBlueprintClasses", column: 17, line: 1 }],
             output: dedent`
-                import { Classes } from "@blueprintjs/core";
+                import { Classes } from "@blueprint-modernized/core";
 
                 <div className={Classes.FILL} />
             `,
@@ -71,7 +71,7 @@ ruleTester.run("classes-constants", classesConstantsRule, {
             code: `<div className={"pt-fill and-some-other-things"} />`,
             errors: [{ messageId: "useBlueprintClasses", column: 17, line: 1 }],
             output: dedent`
-                import { Classes } from "@blueprintjs/core";
+                import { Classes } from "@blueprint-modernized/core";
 
                 <div className={${"`${Classes.FILL} and-some-other-things`"}} />
             `,
@@ -82,7 +82,7 @@ ruleTester.run("classes-constants", classesConstantsRule, {
             code: "<div className={`pt-fill`} />",
             errors: [{ messageId: "useBlueprintClasses", column: 17, line: 1 }],
             output: dedent`
-                import { Classes } from "@blueprintjs/core";
+                import { Classes } from "@blueprint-modernized/core";
 
                 <div className={Classes.FILL} />
             `,
@@ -92,7 +92,7 @@ ruleTester.run("classes-constants", classesConstantsRule, {
             code: "<div className={`pt-fill and-some-other-things`} />",
             errors: [{ messageId: "useBlueprintClasses", column: 17, line: 1 }],
             output: dedent`
-                import { Classes } from "@blueprintjs/core";
+                import { Classes } from "@blueprint-modernized/core";
 
                 <div className={${"`${Classes.FILL} and-some-other-things`"}} />
             `,
@@ -103,7 +103,7 @@ ruleTester.run("classes-constants", classesConstantsRule, {
             code: `classNames("pt-fill");`,
             errors: [{ messageId: "useBlueprintClasses", column: 12, line: 1 }],
             output: dedent`
-                import { Classes } from "@blueprintjs/core";
+                import { Classes } from "@blueprint-modernized/core";
 
                 classNames(Classes.FILL);
             `,
@@ -114,7 +114,7 @@ ruleTester.run("classes-constants", classesConstantsRule, {
             code: `myFunction(".pt-fill");`,
             errors: [{ messageId: "useBlueprintClasses", column: 12, line: 1 }],
             output: dedent`
-                import { Classes } from "@blueprintjs/core";
+                import { Classes } from "@blueprint-modernized/core";
 
                 myFunction(${"`.${Classes.FILL}`"});
             `,
@@ -125,7 +125,7 @@ ruleTester.run("classes-constants", classesConstantsRule, {
             code: `myFunction("my-class .pt-fill");`,
             errors: [{ messageId: "useBlueprintClasses", column: 12, line: 1 }],
             output: dedent`
-                import { Classes } from "@blueprintjs/core";
+                import { Classes } from "@blueprint-modernized/core";
 
                 myFunction(${"`my-class .${Classes.FILL}`"});
             `,
@@ -136,7 +136,7 @@ ruleTester.run("classes-constants", classesConstantsRule, {
             code: "myFunction(`my-class .pt-fill`);",
             errors: [{ messageId: "useBlueprintClasses", column: 12, line: 1 }],
             output: dedent`
-                import { Classes } from "@blueprintjs/core";
+                import { Classes } from "@blueprint-modernized/core";
 
                 myFunction(${"`my-class .${Classes.FILL}`"});
             `,
@@ -147,7 +147,7 @@ ruleTester.run("classes-constants", classesConstantsRule, {
             code: `classNames["pt-fill"] = true;`,
             errors: [{ messageId: "useBlueprintClasses", column: 12, line: 1 }],
             output: dedent`
-                import { Classes } from "@blueprintjs/core";
+                import { Classes } from "@blueprint-modernized/core";
 
                 classNames[Classes.FILL] = true;
             `,
@@ -157,13 +157,13 @@ ruleTester.run("classes-constants", classesConstantsRule, {
 
         {
             code: dedent`
-                import { Dialog } from "@blueprintjs/core";
+                import { Dialog } from "@blueprint-modernized/core";
 
                 classNames["pt-fill"] = true;
             `,
             errors: [{ messageId: "useBlueprintClasses", column: 12, line: 3 }],
             output: dedent`
-                import { Classes, Dialog } from "@blueprintjs/core";
+                import { Classes, Dialog } from "@blueprint-modernized/core";
 
                 classNames[Classes.FILL] = true;
             `,
@@ -180,7 +180,7 @@ ruleTester.run("classes-constants", classesConstantsRule, {
             errors: [{ messageId: "useBlueprintClasses", column: 12, line: 4 }],
             output: dedent`
                 import { Something } from "@a/somewhere";
-                import { Classes } from "@blueprintjs/core";
+                import { Classes } from "@blueprint-modernized/core";
                 import { SomethingElse } from "somewhere";
 
                 classNames[Classes.FILL] = true;

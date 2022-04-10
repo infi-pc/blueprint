@@ -18,7 +18,7 @@ import classNames from "classnames";
 import * as React from "react";
 import DayPicker, { CaptionElementProps, DayModifiers, NavbarElementProps } from "react-day-picker";
 
-import { AbstractPureComponent2, Button, DISPLAYNAME_PREFIX, Divider, Props } from "@blueprintjs/core";
+import { AbstractPureComponent2, Button, DISPLAYNAME_PREFIX, Divider, Props } from "@blueprint-modernized/core";
 
 import * as Classes from "./common/classes";
 import * as DateUtils from "./common/dateUtils";

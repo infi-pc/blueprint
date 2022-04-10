@@ -16,8 +16,8 @@
 
 import * as React from "react";
 
-import { Button, MenuItem } from "@blueprintjs/core";
-import { Select, SelectProps } from "@blueprintjs/select";
+import { Button, MenuItem } from "@blueprint-modernized/core";
+import { Select, SelectProps } from "@blueprint-modernized/select";
 
 import {
     areFilmsEqual,

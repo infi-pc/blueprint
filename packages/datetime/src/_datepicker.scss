@@ -1,8 +1,8 @@
 // Copyright 2015 Palantir Technologies, Inc. All rights reserved.
 // Licensed under the Apache License, Version 2.0.
 
-@import "~@blueprintjs/colors/lib/scss/colors";
-@import "~@blueprintjs/core/src/components/popover/common";
+@import "~@blueprint-modernized/colors/lib/scss/colors";
+@import "~@blueprint-modernized/core/src/components/popover/common";
 @import "./common";
 
 $cell-size: $pt-grid-size * 3 !default;
@@ -54,7 +54,7 @@ $header-margin: ($header-height - $pt-input-height) * 0.5 !default;
     user-select: none;
 
     // create space between months (selector matches all but first month)
-    & + & {
+    &+& {
       margin-left: $pt-grid-size;
     }
   }
@@ -150,11 +150,11 @@ $header-margin: ($header-height - $pt-input-height) * 0.5 !default;
   right: 0;
   top: 0;
 
-  > .DayPicker-NavButton--prev {
+  >.DayPicker-NavButton--prev {
     margin-right: auto;
   }
 
-  > .DayPicker-NavButton--next {
+  >.DayPicker-NavButton--next {
     margin-left: auto;
   }
 }
@@ -170,12 +170,12 @@ $header-margin: ($header-height - $pt-input-height) * 0.5 !default;
     padding-left: $datepicker-padding;
     padding-right: $pt-icon-size-standard;
 
-    + .#{$ns}-icon {
+    +.#{$ns}-icon {
       right: 2px;
     }
   }
 
-  + .#{$ns}-divider {
+  +.#{$ns}-divider {
     margin: 0;
   }
 }

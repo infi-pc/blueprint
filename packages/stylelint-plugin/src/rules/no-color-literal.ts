@@ -17,7 +17,7 @@ import type { Declaration, Root } from "postcss";
 import valueParser from "postcss-value-parser";
 import stylelint, { PluginContext, PostcssResult } from "stylelint";
 
-import { Colors } from "@blueprintjs/colors";
+import { Colors } from "@blueprint-modernized/colors";
 
 import { checkImportExists } from "../utils/checkImportExists";
 import {
@@ -31,7 +31,7 @@ import {
 import { isHexColor, normalizeHexColor } from "../utils/hexColor";
 import { insertImport } from "../utils/insertImport";
 
-const ruleName = "@blueprintjs/no-color-literal";
+const ruleName = "@blueprint-modernized/no-color-literal";
 
 const messages = stylelint.utils.ruleMessages(ruleName, {
     expected: (unfixed: any, fixed: any) => `Use the \`${fixed}\` variable instead of the \`${unfixed}\` literal`,

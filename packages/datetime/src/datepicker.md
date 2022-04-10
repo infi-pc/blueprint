@@ -98,7 +98,7 @@ customize how dates are rendered, which day of the week is the first column, etc
 You will need to overwrite the functions of `LocaleUtil` by your own.
 [See the interface definition for more details](https://github.com/gpbl/react-day-picker/blob/v7.3.0/types/utils.d.ts#L5).
 
-Although `@blueprintjs/datetime` and `react-day-picker` do not explicitly require `moment.js` as a dependency,
+Although `@blueprint-modernized/datetime` and `react-day-picker` do not explicitly require `moment.js` as a dependency,
 you may wish to use Moment's implementation of localization so that you do not have to write these functions yourself.
 
 To use moment for your localization, make sure to include `moment` in your dependencies and use `MomentLocaleUtils`

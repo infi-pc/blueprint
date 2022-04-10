@@ -199,7 +199,7 @@ renameString "Classes\.SVG_SPINNER,?" ''
 warn SVGSpinner 'DELETED. Spinner now supports usage in an SVG.'
 warn SVGPopover 'DELETED. Set *TagName props to SVG elements.'
 warn SVGTooltip 'DELETED. Set *TagName props to SVG elements.'
-warn "\\bTable\\b" '@blueprintjs/core Table component renamed to HTMLTable (@blueprintjs/table package unchanged).'
+warn "\\bTable\\b" '@blueprint-modernized/core Table component renamed to HTMLTable (@blueprint-modernized/table package unchanged).'
 
 # String enums
 renameProp CollapseFrom Boundary

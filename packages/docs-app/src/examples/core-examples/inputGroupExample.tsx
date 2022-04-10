@@ -28,9 +28,9 @@ import {
     Spinner,
     Switch,
     Tag,
-} from "@blueprintjs/core";
-import { Example, handleBooleanChange, handleStringChange, IExampleProps } from "@blueprintjs/docs-theme";
-import { Popover2, Tooltip2 } from "@blueprintjs/popover2";
+} from "@blueprint-modernized/core";
+import { Example, handleBooleanChange, handleStringChange, IExampleProps } from "@blueprint-modernized/docs-theme";
+import { Popover2, Tooltip2 } from "@blueprint-modernized/popover2";
 
 export interface IInputGroupExampleState {
     disabled: boolean;

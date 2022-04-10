@@ -17,7 +17,7 @@
 import download from "downloadjs";
 import * as React from "react";
 
-import { Callout, Card } from "@blueprintjs/core";
+import { Callout, Card } from "@blueprint-modernized/core";
 
 const URL_BASE = "https://raw.githubusercontent.com/palantir/blueprint/develop/resources/sketch";
 

@@ -12,7 +12,7 @@ to render calendars.
 ## Installation
 
 ```
-npm install --save @blueprintjs/datetime
+npm install --save @blueprint-modernized/datetime
 ```
 
 ### [Full Documentation](http://blueprintjs.com/docs) | [Source Code](https://github.com/palantir/blueprint)

@@ -7,8 +7,8 @@ Deprecated: use [Tooltip2](#popover2-package/tooltip2)
 
 </h4>
 
-This component is **deprecated since @blueprintjs/core v3.38.0** in favor of the new
-Tooltip2 component available in the `@blueprintjs/popover2` package. You should migrate
+This component is **deprecated since @blueprint-modernized/core v3.38.0** in favor of the new
+Tooltip2 component available in the `@blueprint-modernized/popover2` package. You should migrate
 to the new API which will become the standard in Blueprint v5.
 
 </div>
@@ -31,7 +31,7 @@ or `<Tooltip2 openOnTargetFocus={false}>` in this scenario in order to avoid und
 UX where the tooltip could open automatically when a user doesn't want it to.
 
 ```tsx
-import { Button, Popover, Position, Tooltip } from "@blueprintjs/core";
+import { Button, Popover, Position, Tooltip } from "@blueprint-modernized/core";
 
 <Popover content={<h1>Popover!</h1>} position={Position.RIGHT}>
     <Tooltip content="I have a popover!" position={Position.RIGHT} openOnTargetFocus={false}>

@@ -4,12 +4,12 @@ Available for use with Sass and Less.
 
 ```css.scss
 // Sass
-@import "path/to/@blueprintjs/core/lib/scss/variables";
+@import "path/to/@blueprint-modernized/core/lib/scss/variables";
 ```
 
 ```css.less
 // Less
-@import "path/to/@blueprintjs/core/lib/less/variables";
+@import "path/to/@blueprint-modernized/core/lib/less/variables";
 ```
 
 The Sass `$` convention is used in this documentation for consistency with the original source code.
@@ -30,7 +30,7 @@ rare cases where custom styling is necessary and should be used sparingly:
 
 @## Icon variables
 
-Most icons should be displayed using the `<Icon>` component from `@blueprintjs/icons` or the
+Most icons should be displayed using the `<Icon>` component from `@blueprint-modernized/icons` or the
 `icon` and `iconName` prop APIs available on many Blueprint components. These APIs have the advantage
 of rendering SVGs directly onto the page.
 
@@ -42,7 +42,7 @@ variables in Sass as a map and in TypeScript as an object (see the [Icons sectio
 full list of identifiers):
 
 ```css.scss
-@import "~@blueprintjs/icons/lib/scss/variables";
+@import "~@blueprint-modernized/icons/lib/scss/variables";
 
 .my-custom-icon {
     content: map-get($blueprint-icon-codepoints, "tick");
@@ -50,7 +50,7 @@ full list of identifiers):
 ```
 
 ```ts
-import { getIconContentString } from "@blueprintjs/icons";
+import { getIconContentString } from "@blueprint-modernized/icons";
 
 document.querySelector(".my-custom-icon").style.content = getIconContentString("tick");
 ```

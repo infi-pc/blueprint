@@ -33,7 +33,7 @@ import {
     Position,
     refHandler,
     setRef,
-} from "@blueprintjs/core";
+} from "@blueprint-modernized/core";
 
 import { DateRange } from "./common/dateRange";
 import { areSameTime, isDateValid, isDayInRange } from "./common/dateUtils";

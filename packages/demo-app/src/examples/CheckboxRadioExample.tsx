@@ -14,7 +14,7 @@ limitations under the License.*/
 
 import * as React from "react";
 
-import { Checkbox, Radio } from "@blueprintjs/core";
+import { Checkbox, Radio } from "@blueprint-modernized/core";
 
 import { ExampleCard } from "./ExampleCard";
 

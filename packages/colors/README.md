@@ -11,7 +11,7 @@ There are currently two color palettes available: modern 4.x colors and "legacy"
 ## Installation
 
 ```
-npm install --save @blueprintjs/colors
+npm install --save @blueprint-modernized/colors
 ```
 
 ### [Full Documentation](http://blueprintjs.com/docs) | [Source Code](https://github.com/palantir/blueprint)

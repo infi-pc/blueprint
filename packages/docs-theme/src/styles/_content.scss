@@ -1,8 +1,8 @@
 // Copyright 2017 Palantir Technologies, Inc. All rights reserved.
 // Licensed under the Apache License, Version 2.0.
 
-@import "~@blueprintjs/core/src/components/icon/icon-mixins";
-@import "~@blueprintjs/icons/lib/scss/variables";
+@import "~@blueprint-modernized/core/src/components/icon/icon-mixins";
+@import "~@blueprint-modernized/icons/lib/scss/variables";
 @import "variables";
 
 $heading-margin: $pt-grid-size * 4;
@@ -17,7 +17,7 @@ $attribute-modifier-color: $violet5;
   position: relative;
 
   // first heading (the h1 at the top) needs smaller top margin to avoid extra scrolling
-  .depth-1 > & {
+  .depth-1>& {
     margin-top: $content-padding;
   }
 }
@@ -70,7 +70,7 @@ $attribute-modifier-color: $violet5;
     display: none;
 
     // color for {{:modifier}} to match modifier table
-    + span {
+    +span {
       background: rgba($attribute-modifier-color, 0.15);
       border-radius: $pt-border-radius;
       color: $attribute-modifier-color;
@@ -78,7 +78,7 @@ $attribute-modifier-color: $violet5;
     }
 
     // adjust colors for {{.modifier}}
-    + .variable {
+    +.variable {
       background: rgba($class-modifier-color, 0.15);
       color: $class-modifier-color;
     }

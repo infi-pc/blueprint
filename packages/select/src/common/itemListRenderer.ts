@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { IRef } from "@blueprintjs/core";
+import { IRef } from "@blueprint-modernized/core";
 
 import { ICreateNewItem } from "./listItemsUtils";
 

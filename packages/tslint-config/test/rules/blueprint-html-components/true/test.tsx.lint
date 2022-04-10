@@ -1,4 +1,4 @@
-import { H3, Pre } from "@blueprintjs/core";
+import { H3, Pre } from "@blueprint-modernized/core";
 <H3>Subtitle</H3>
 <Pre>block</Pre>
 

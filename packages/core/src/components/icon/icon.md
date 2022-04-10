@@ -25,7 +25,7 @@ image; the icon element itself can be sized separately using CSS.
 The HTML element rendered by `<Icon>` can be customized with the `tagName` prop
 (defaults to `span`), and additional props are passed to this element.
 
-Data files in the __@blueprintjs/icons__ package provide SVG path information
+Data files in the __@blueprint-modernized/icons__ package provide SVG path information
 for Blueprint's 300+ icons for 16px and 20px grids. The `icon` prop dictates
 which SVG is rendered and `size` determines which pixel grid is used:
 `size >= 20` will use the 20px grid and smaller icons will use the 16px
@@ -35,7 +35,7 @@ If `title` is not provided to an Icon, `aria-hidden` will be set to true as
 it will be assumed that the icon is decorative if not labeled.
 
 ```tsx
-import { Icon, IconSize } from "@blueprintjs/core";
+import { Icon, IconSize } from "@blueprint-modernized/core";
 
 // icon name string literals are type checked
 <Icon icon="cross" />
@@ -69,7 +69,7 @@ Custom sizes are supported. The following React component:
 
 @## CSS
 
-The CSS-only icons API uses the __icon fonts__ from the __@blueprintjs/icons__ package.
+The CSS-only icons API uses the __icon fonts__ from the __@blueprint-modernized/icons__ package.
 
 To use Blueprint UI icons via CSS, you must apply two classes to a `<span>` element:
 - a __sizing class__, either `@ns-icon-standard` (16px) or `@ns-icon-large` (20px)

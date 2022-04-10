@@ -16,11 +16,11 @@
 
 import * as React from "react";
 
-import { Classes, H5, HTMLSelect, Switch } from "@blueprintjs/core";
-import { TimePicker, TimePrecision } from "@blueprintjs/datetime";
+import { Classes, H5, HTMLSelect, Switch } from "@blueprint-modernized/core";
+import { TimePicker, TimePrecision } from "@blueprint-modernized/datetime";
 // tslint:disable-next-line:no-submodule-imports
-import { getDefaultMaxTime, getDefaultMinTime } from "@blueprintjs/datetime/lib/esm/common/timeUnit";
-import { Example, handleNumberChange, handleValueChange, IExampleProps } from "@blueprintjs/docs-theme";
+import { getDefaultMaxTime, getDefaultMinTime } from "@blueprint-modernized/datetime/lib/esm/common/timeUnit";
+import { Example, handleNumberChange, handleValueChange, IExampleProps } from "@blueprint-modernized/docs-theme";
 
 import { PrecisionSelect } from "./common/precisionSelect";
 

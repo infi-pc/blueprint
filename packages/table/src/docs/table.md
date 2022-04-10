@@ -5,19 +5,19 @@ A highly interactive table component.
 <div class="@ns-callout @ns-large @ns-intent-primary @ns-icon-info-sign">
 
 If you are looking instead for the Blueprint-styled HTML `<table>`, see
-[`HTMLTable` in **@blueprintjs/core**](#core/components/html-table).
+[`HTMLTable` in **@blueprint-modernized/core**](#core/components/html-table).
 </div>
 
 Make sure to review the [getting started docs for installation info](#blueprint/getting-started).
 
 ```sh
-npm install --save @blueprintjs/table
+npm install --save @blueprint-modernized/table
 ```
 
 Do not forget to include `table.css` on your page:
 
 ```scss
-@import "~@blueprintjs/table/lib/css/table.css";
+@import "~@blueprint-modernized/table/lib/css/table.css";
 ```
 
 <div class="@ns-callout @ns-large @ns-intent-success @ns-icon-star">
@@ -43,7 +43,7 @@ and change the `numRows` prop on the `Table` to set the number of rows.
 For example, this code creates an empty table with three columns and five rows:
 
 ```tsx
-import { Column, Table } from "@blueprintjs/table";
+import { Column, Table } from "@blueprint-modernized/table";
 
 <Table numRows={5}>
     <Column />
@@ -60,7 +60,7 @@ This is useful when working with typed columnar data, like database results.
 For example, this creates a table that renders dollar and euro values:
 
 ```tsx
-import { Cell, Column, Table } from "@blueprintjs/table";
+import { Cell, Column, Table } from "@blueprint-modernized/table";
 
 const dollarCellRenderer = (rowIndex: number) => (
     <Cell>{`$${(rowIndex * 10).toFixed(2)}`}</Cell>

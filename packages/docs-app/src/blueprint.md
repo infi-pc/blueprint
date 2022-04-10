@@ -17,14 +17,14 @@ It is optimized for building complex data-dense interfaces for desktop applicati
 
 ### Install
 
-**@blueprintjs/core** is the primary Blueprint package on NPM and home to over 40 components.
+**@blueprint-modernized/core** is the primary Blueprint package on NPM and home to over 40 components.
 Install it with your package manager ([Yarn](https://yarnpkg.com/) is used in this example):
 
 ```sh
-yarn add @blueprintjs/core react react-dom
+yarn add @blueprint-modernized/core react react-dom
 ```
 
-Additional components live in the **@blueprintjs/icons**, **@blueprintjs/datetime**, **@blueprintjs/select**, **@blueprintjs/table**, and **@blueprintjs/timezone** packages,
+Additional components live in the **@blueprint-modernized/icons**, **@blueprint-modernized/datetime**, **@blueprint-modernized/select**, **@blueprint-modernized/table**, and **@blueprint-modernized/timezone** packages,
 separated by use case and significant dependencies. All have peer dependencies on **react** and **react-dom**, so these two packages must be installed alongside Blueprint.
 
 ### Import
@@ -32,7 +32,7 @@ separated by use case and significant dependencies. All have peer dependencies o
 Import React components from the appropriate package.
 
 ```tsx
-import { Button } from "@blueprintjs/core";
+import { Button } from "@blueprint-modernized/core";
 
 <Button intent="success" text="button content" onClick={incrementCounter} />
 ```
@@ -44,8 +44,8 @@ The following example shows an `index.html` file; the same stylesheets should be
 ```html
 <link href="path/to/node_modules/normalize.css/normalize.css" rel="stylesheet" />
 <!-- blueprint-icons.css file must be included alongside blueprint.css! -->
-<link href="path/to/node_modules/@blueprintjs/icons/lib/css/blueprint-icons.css" rel="stylesheet" />
-<link href="path/to/node_modules/@blueprintjs/core/lib/css/blueprint.css" rel="stylesheet" />
+<link href="path/to/node_modules/@blueprint-modernized/icons/lib/css/blueprint-icons.css" rel="stylesheet" />
+<link href="path/to/node_modules/@blueprint-modernized/core/lib/css/blueprint.css" rel="stylesheet" />
 <!-- add other blueprint-*.css files here -->
 ```
 

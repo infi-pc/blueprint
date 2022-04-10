@@ -16,8 +16,8 @@
 
 import * as React from "react";
 
-import { Alignment, Classes, H3, H5, InputGroup, Navbar, Switch, Tab, TabId, Tabs } from "@blueprintjs/core";
-import { Example, handleBooleanChange, IExampleProps } from "@blueprintjs/docs-theme";
+import { Alignment, Classes, H3, H5, InputGroup, Navbar, Switch, Tab, TabId, Tabs } from "@blueprint-modernized/core";
+import { Example, handleBooleanChange, IExampleProps } from "@blueprint-modernized/docs-theme";
 
 export interface ITabsExampleState {
     activePanelOnly: boolean;

@@ -15,7 +15,7 @@ limitations under the License.*/
 import classNames from "classnames";
 import * as React from "react";
 
-import { Classes, Intent, Text } from "@blueprintjs/core";
+import { Classes, Intent, Text } from "@blueprint-modernized/core";
 
 import { ExampleCard } from "./ExampleCard";
 

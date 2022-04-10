@@ -124,8 +124,8 @@ jobs:
       - run:
           command: |
             case $CIRCLE_NODE_INDEX in \
-            0) yarn lerna run --scope "@blueprintjs/eslint-plugin" test ;; \
-            1) yarn lerna run --scope "@blueprintjs/stylelint-plugin" test ;; \
+            0) yarn lerna run --scope "@blueprint-modernized/eslint-plugin" test ;; \
+            1) yarn lerna run --scope "@blueprint-modernized/stylelint-plugin" test ;; \
             esac
           when: always
       - store_test_results: { path: ./reports }
@@ -155,12 +155,12 @@ jobs:
           command: |
             case $CIRCLE_NODE_INDEX in \
             0) yarn lerna run --parallel test:typeCheck ;; \
-            1) yarn lerna run --scope "@blueprintjs/core" test:karma ;; \
-            2) yarn lerna run --scope "@blueprintjs/datetime" test:karma ;; \
-            3) yarn lerna run --scope "@blueprintjs/popover2" test:karma ;; \
-            4) yarn lerna run --scope "@blueprintjs/select" test:karma ;; \
-            5) yarn lerna run --scope "@blueprintjs/table" test:karma ;; \
-            6) yarn lerna run --scope "@blueprintjs/timezone" test:karma ;; \
+            1) yarn lerna run --scope "@blueprint-modernized/core" test:karma ;; \
+            2) yarn lerna run --scope "@blueprint-modernized/datetime" test:karma ;; \
+            3) yarn lerna run --scope "@blueprint-modernized/popover2" test:karma ;; \
+            4) yarn lerna run --scope "@blueprint-modernized/select" test:karma ;; \
+            5) yarn lerna run --scope "@blueprint-modernized/table" test:karma ;; \
+            6) yarn lerna run --scope "@blueprint-modernized/timezone" test:karma ;; \
             esac
           when: always
       - store_test_results: { path: ./reports }

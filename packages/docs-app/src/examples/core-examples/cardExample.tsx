@@ -16,8 +16,8 @@
 
 import * as React from "react";
 
-import { Button, Card, Classes, Elevation, H5, Label, Slider, Switch } from "@blueprintjs/core";
-import { Example, IExampleProps } from "@blueprintjs/docs-theme";
+import { Button, Card, Classes, Elevation, H5, Label, Slider, Switch } from "@blueprint-modernized/core";
+import { Example, IExampleProps } from "@blueprint-modernized/docs-theme";
 
 export interface ICardExampleState {
     elevation: Elevation;

@@ -32,8 +32,8 @@ import {
     Keys,
     Popover,
     Position,
-} from "@blueprintjs/core";
-import { expectPropValidationError } from "@blueprintjs/test-commons";
+} from "@blueprint-modernized/core";
+import { expectPropValidationError } from "@blueprint-modernized/test-commons";
 
 import { Classes as DateClasses, DateRange, DateRangeInput, DateRangePicker, TimePrecision } from "../src";
 import { Months } from "../src/common/months";

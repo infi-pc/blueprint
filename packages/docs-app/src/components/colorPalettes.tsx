@@ -17,7 +17,7 @@
 import classNames from "classnames";
 import * as React from "react";
 
-import { Classes, Colors, Pre } from "@blueprintjs/core";
+import { Classes, Colors, Pre } from "@blueprint-modernized/core";
 
 import { ClickToCopy } from "./clickToCopy";
 

@@ -19,7 +19,7 @@ import { shallow } from "enzyme";
 import * as React from "react";
 import * as sinon from "sinon";
 
-import { Classes as CoreClasses, H4, Menu, MenuItem } from "@blueprintjs/core";
+import { Classes as CoreClasses, H4, Menu, MenuItem } from "@blueprint-modernized/core";
 
 import { ColumnHeaderCell, IColumnHeaderCellProps } from "../src";
 import * as Classes from "../src/common/classes";

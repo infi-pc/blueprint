@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { IconSize } from "@blueprintjs/core";
+import { IconSize } from "@blueprint-modernized/core";
 
 // used to exclude icons from column header measure
 export const CLASSNAME_EXCLUDED_FROM_TEXT_MEASUREMENT = "bp-table-text-no-measure";

@@ -15,7 +15,7 @@ with the `targetRef` prop (otherwise, the component won't be able to attach one 
 [forwardRef]: https://reactjs.org/docs/forwarding-refs.html
 
 ```tsx
-import { ResizeEntry, ResizeSensor2 } from "@blueprintjs/core";
+import { ResizeEntry, ResizeSensor2 } from "@blueprint-modernized/core";
 
 function handleResize(entries: ResizeEntry[]) {
     console.log(entries.map(e => `${e.contentRect.width} x ${e.contentRect.height}`));

@@ -23,7 +23,7 @@ import {
     Props,
     IRef,
     Utils as CoreUtils,
-} from "@blueprintjs/core";
+} from "@blueprint-modernized/core";
 
 import * as Classes from "../common/classes";
 import { LoadableContent } from "../common/loadableContent";

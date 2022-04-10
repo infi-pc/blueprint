@@ -27,7 +27,7 @@ export * from "./position";
 export * from "./props";
 export * from "./refs";
 
-import { Colors } from "@blueprintjs/colors";
+import { Colors } from "@blueprint-modernized/colors";
 
 import * as Classes from "./classes";
 import * as Keys from "./keys";

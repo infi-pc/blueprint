@@ -16,8 +16,8 @@
 
 import * as React from "react";
 
-import { Classes, HTMLSelect } from "@blueprintjs/core";
-import { TimePrecision } from "@blueprintjs/datetime";
+import { Classes, HTMLSelect } from "@blueprint-modernized/core";
+import { TimePrecision } from "@blueprint-modernized/datetime";
 
 export interface IPrecisionSelectProps {
     /**

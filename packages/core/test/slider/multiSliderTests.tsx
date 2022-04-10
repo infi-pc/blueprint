@@ -20,7 +20,7 @@ import * as React from "react";
 import * as ReactDOM from "react-dom";
 import * as sinon from "sinon";
 
-import { expectPropValidationError } from "@blueprintjs/test-commons";
+import { expectPropValidationError } from "@blueprint-modernized/test-commons";
 
 import { Classes, IMultiSliderProps, MultiSlider } from "../../src";
 import { Handle } from "../../src/components/slider/handle";

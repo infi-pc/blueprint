@@ -77,7 +77,7 @@ function walk(ctx: Lint.WalkContext<void>): void {
     const importsToAdd = addImportToFile(
         ctx.sourceFile,
         tagFailures.map(m => m.newTagName),
-        "@blueprintjs/core",
+        "@blueprint-modernized/core",
     );
     tagFailures[0].replacements.push(importsToAdd);
 

@@ -32,14 +32,14 @@ import {
     Label,
     MultistepDialogNavPosition,
     HTMLSelect,
-} from "@blueprintjs/core";
+} from "@blueprint-modernized/core";
 import {
     Example,
     handleBooleanChange,
     handleStringChange,
     handleValueChange,
     IExampleProps,
-} from "@blueprintjs/docs-theme";
+} from "@blueprint-modernized/docs-theme";
 
 import { IBlueprintExampleData } from "../../tags/types";
 

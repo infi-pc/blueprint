@@ -29,8 +29,8 @@ import {
     Label,
     RadioGroup,
     Slider,
-} from "@blueprintjs/core";
-import { Example, handleStringChange, IExampleProps } from "@blueprintjs/docs-theme";
+} from "@blueprint-modernized/core";
+import { Example, handleStringChange, IExampleProps } from "@blueprint-modernized/docs-theme";
 
 export interface IBreadcrumbsExampleState {
     collapseFrom: Boundary;

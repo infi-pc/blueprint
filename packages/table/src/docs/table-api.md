@@ -5,7 +5,7 @@ reference: api
 @# JavaScript API
 
 The `Table`, `Column`, `Cell`, `ColumnHeaderCell`, `EditableName`, and `EditableCell`
-components are available in the __@blueprintjs/table__ package.
+components are available in the __@blueprint-modernized/table__ package.
 
 @## Table
 
@@ -103,7 +103,7 @@ recommend using our exported __factory methods__ to help you construct the
 appropriate schema for your desired region type:
 
 ```tsx
-import { Regions } from "@blueprintjs/table";
+import { Regions } from "@blueprint-modernized/table";
 
 const singleCellRegion   = Regions.cell(0, 0); // { rows: [0, 0], cols: [0, 0] }
 const singleColumnRegion = Regions.column(0);  // { rows: null, cols: [0, 0] }
@@ -116,7 +116,7 @@ const multiRowRegion    = Regions.row(0, 2);        // { rows: [0, 2], cols: nul
 const tableRegion = Regions.table(); // { rows: null, cols: null }
 ```
 
-The __@blueprintjs/table__ package also exports a `RegionCardinality`
+The __@blueprint-modernized/table__ package also exports a `RegionCardinality`
 enumeration to describe the various region types in code:
 - `RegionCardinality.CELLS`: describes a cell region
 - `RegionCardinality.FULL_ROWS`: describes a row region
@@ -127,7 +127,7 @@ This enumeration is primarily used with the `selectionModes` prop to inform the
 `Table` which kinds of regions are selectable:
 
 ```tsx
-import { RegionCardinality } from "@blueprintjs/table";
+import { RegionCardinality } from "@blueprint-modernized/table";
 
 // disables selection of all region types
 <Table selectionModes={[]} />
@@ -146,7 +146,7 @@ You may also use the exported `SelectionModes` enumeration to express common
 selection-mode combinations more concisely:
 
 ```tsx
-import { SelectionModes } from "@blueprintjs/table";
+import { SelectionModes } from "@blueprint-modernized/table";
 
 <Table selectionModes={SelectionModes.ALL} />
 <Table selectionModes={SelectionModes.COLUMNS_AND_CELLS} />
@@ -161,7 +161,7 @@ determine the cardinality of any region using the exported
 `Regions.getRegionCardinality` function:
 
 ```tsx
-import { Regions } from "@blueprintjs/table";
+import { Regions } from "@blueprint-modernized/table";
 
 const cardinalities = [
     Regions.getRegionCardinality(Regions.cell(0, 0)), // RegionCardinality.CELLS

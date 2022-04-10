@@ -18,8 +18,8 @@ $ROOT_NM/.bin/ts-node -O "{ \"esModuleInterop\": true }" ../node-build-scripts/s
 # going through node_modules. https://github.com/palantir/blueprint/issues/3500
 if [[ -d $OUTPUT ]]; then
   if [[ $OSTYPE == 'darwin'* ]]; then
-    sed -i '' 's/..\/node_modules\/@blueprintjs\///' $OUTPUT/*.css.map
+    sed -i '' 's/..\/node_modules\/@blueprint-modernized\///' $OUTPUT/*.css.map
   else
-    sed -i 's/..\/node_modules\/@blueprintjs\///' $OUTPUT/*.css.map
+    sed -i 's/..\/node_modules\/@blueprint-modernized\///' $OUTPUT/*.css.map
   fi
 fi

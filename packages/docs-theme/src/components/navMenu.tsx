@@ -18,7 +18,7 @@ import { IHeadingNode, IPageNode, isPageNode } from "@documentalist/client";
 import classNames from "classnames";
 import * as React from "react";
 
-import { Classes, Props } from "@blueprintjs/core";
+import { Classes, Props } from "@blueprint-modernized/core";
 
 import { NavMenuItemProps, NavMenuItem } from "./navMenuItem";
 

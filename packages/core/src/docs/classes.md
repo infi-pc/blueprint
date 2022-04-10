@@ -32,14 +32,14 @@ be particularly useful when writing UI tests.
 
 ```tsx
 // use Classes constants for forward-compatible custom elements.
-import { Classes } from "@blueprintjs/core";
+import { Classes } from "@blueprint-modernized/core";
 <a className={Classes.MENU_ITEM}>custom menu item</a>;
 ```
 
 ```css.scss
 // interpolate the $ns variable to generate forward-compatible class names.
 // this approach is *not encouraged* as it increases maintenance cost.
-@import "~@blueprintjs/core/lib/scss/variables";
+@import "~@blueprint-modernized/core/lib/scss/variables";
 .#{$ns}-menu-item {
 }
 ```
@@ -91,14 +91,14 @@ requires several things:
 
 @## Linting
 
-The [**@blueprintjs/eslint-config**](https://www.npmjs.com/package/@blueprintjs/eslint-config)
+The [**@blueprint-modernized/eslint-config**](https://www.npmjs.com/package/@blueprint-modernized/eslint-config)
 NPM package provides advanced configuration for [ESLint](https://eslint.org/). Blueprint is
 currently transitioning from [TSLint](https://palantir.github.io/tslint/) to ESLint, and as
 such, rules are being migrated from TSLint to ESLint. In the meantime, some TSLint rules are
 being run using ESLint.
 
-The [**@blueprintjs/eslint-plugin**](https://www.npmjs.com/package/@blueprintjs/eslint-plugin)
+The [**@blueprint-modernized/eslint-plugin**](https://www.npmjs.com/package/@blueprint-modernized/eslint-plugin)
 NPM package includes a custom `blueprint-html-components` rule that will warn on usages of
 JSX intrinsic elements (`<h1>`) that have a Blueprint alternative (`<H1>`). See
-the package's [README](https://www.npmjs.com/package/@blueprintjs/eslint-plugin)
+the package's [README](https://www.npmjs.com/package/@blueprint-modernized/eslint-plugin)
 for usage instructions.

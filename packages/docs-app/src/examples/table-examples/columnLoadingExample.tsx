@@ -16,9 +16,9 @@
 
 import * as React from "react";
 
-import { HTMLSelect, Label } from "@blueprintjs/core";
-import { Example, handleNumberChange, IExampleProps } from "@blueprintjs/docs-theme";
-import { Cell, Column, ColumnLoadingOption, Table2 } from "@blueprintjs/table";
+import { HTMLSelect, Label } from "@blueprint-modernized/core";
+import { Example, handleNumberChange, IExampleProps } from "@blueprint-modernized/docs-theme";
+import { Cell, Column, ColumnLoadingOption, Table2 } from "@blueprint-modernized/table";
 
 interface IBigSpaceRock {
     [key: string]: number | string;

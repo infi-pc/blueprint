@@ -79,8 +79,8 @@ See the [callout here](#core/components/button.props) for more details.
 </div>
 
 ```tsx
-import { Button } from "@blueprintjs/core";
-import { Classes, Popover2 } from "@blueprintjs/popover2";
+import { Button } from "@blueprint-modernized/core";
+import { Classes, Popover2 } from "@blueprint-modernized/popover2";
 
 export class PopoverExample extends React.PureComponent {
     public render() {
@@ -113,7 +113,7 @@ The `placement` prop controls the popover's position relative to the target. Pop
 to Popper.js; it uses the same semantics and supported values
 [as shown here in the docs](https://popper.js.org/docs/v2/constructors/#options).
 
-`import { PopperPlacements } from "@blueprintjs/popover2"` defines the full set of supported values.
+`import { PopperPlacements } from "@blueprint-modernized/popover2"` defines the full set of supported values.
 There are straightforward base placements (`"top"`, `"bottom"`, `"left"`, `"right"`) and their variations, which
 each consist of two attributes:
 
@@ -185,8 +185,8 @@ The popover will re-open when `disabled` is set to `false`.
 #### Example controlled usage
 
 ```tsx
-import { Button } from "@blueprintjs/core";
-import { Classes, Popover2 } from "@blueprintjs/popover2";
+import { Button } from "@blueprint-modernized/core";
+import { Classes, Popover2 } from "@blueprint-modernized/popover2";
 
 export class ControlledPopoverExample extends React.Component<{}, { isOpen: boolean }> {
     public state = { isOpen: false };
@@ -417,8 +417,8 @@ zeroing the default hover delays.
 `Popover2` delays rendering updates triggered on `mouseleave`, because the mouse might have moved from the popover to the target, which may require special handling depending on the current [`interactionKind`](#popover2-package/popover2.interactions). Popper.js also throttles rendering updates to improve performance. If your components are not updating in a synchronous fashion as expected, you may need to introduce a `setTimeout` to wait for asynchronous Popover rendering to catch up:
 
 ```tsx
-import { Overlay } from "@blueprintjs/core";
-import { Classes, Popover2 } from "@blueprintjs/popover2";
+import { Overlay } from "@blueprint-modernized/core";
+import { Classes, Popover2 } from "@blueprint-modernized/popover2";
 import { assert } from "chai";
 import { mount } from "enzyme";
 import { Target } from "react-popper";

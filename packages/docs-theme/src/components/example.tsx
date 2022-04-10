@@ -17,7 +17,7 @@
 import classNames from "classnames";
 import * as React from "react";
 
-import { Props } from "@blueprintjs/core";
+import { Props } from "@blueprint-modernized/core";
 
 // eslint-disable-next-line @typescript-eslint/ban-types
 export interface IExampleProps<T = {}> extends Props {
@@ -83,7 +83,7 @@ export interface IDocsExampleProps extends IExampleProps {
  * Container for an example and its options.
  *
  * ```tsx
- * import { Example, IExampleProps } from "@blueprintjs/docs-theme";
+ * import { Example, IExampleProps } from "@blueprint-modernized/docs-theme";
  * // use IExampleProps as your props type,
  * // then spread it to <Example> below
  * export class MyExample extends React.PureComponent<IExampleProps, [your state]> {

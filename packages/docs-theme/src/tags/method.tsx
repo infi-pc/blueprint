@@ -17,7 +17,7 @@
 import { isTsClass, isTsMethod, ITag, ITsClass, ITypescriptPluginData } from "@documentalist/client";
 import * as React from "react";
 
-import { Props } from "@blueprintjs/core";
+import { Props } from "@blueprint-modernized/core";
 
 import { DocumentationContextTypes, IDocumentationContext } from "../common/context";
 import { MethodTable } from "../components/typescript/methodTable";

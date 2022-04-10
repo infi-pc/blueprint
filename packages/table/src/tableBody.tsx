@@ -17,7 +17,7 @@
 import classNames from "classnames";
 import * as React from "react";
 
-import { AbstractComponent2, Utils as CoreUtils } from "@blueprintjs/core";
+import { AbstractComponent2, Utils as CoreUtils } from "@blueprint-modernized/core";
 
 import type { CellCoordinates } from "./common/cellTypes";
 import * as Classes from "./common/classes";

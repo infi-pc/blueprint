@@ -32,7 +32,7 @@ import {
     MenuDivider,
     MenuItem,
     Switch,
-} from "@blueprintjs/core";
+} from "@blueprint-modernized/core";
 import {
     Cell,
     Column,
@@ -50,10 +50,10 @@ import {
     TruncatedFormat,
     TruncatedPopoverMode,
     Utils,
-} from "@blueprintjs/table";
-import type { IFocusedCellCoordinates } from "@blueprintjs/table/src/common/cellTypes";
-import type { ColumnIndices, RowIndices } from "@blueprintjs/table/src/common/grid";
-import { RenderMode } from "@blueprintjs/table/src/common/renderMode";
+} from "@blueprint-modernized/table";
+import type { IFocusedCellCoordinates } from "@blueprint-modernized/table/src/common/cellTypes";
+import type { ColumnIndices, RowIndices } from "@blueprint-modernized/table/src/common/grid";
+import { RenderMode } from "@blueprint-modernized/table/src/common/renderMode";
 
 import { DenseGridMutableStore } from "./denseGridMutableStore";
 import { LocalStore } from "./localStore";
@@ -148,7 +148,7 @@ const CELL_CONTENT_GENERATORS: { [name: string]: (ri: number, ci: number) => str
     },
 };
 
-// TODO: Pull these from @blueprintjs/docs
+// TODO: Pull these from @blueprint-modernized/docs
 
 /** Event handler that exposes the target element's value as a boolean. */
 function handleBooleanChange(handler: (checked: boolean) => void) {

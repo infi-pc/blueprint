@@ -20,7 +20,7 @@ import { mount, ReactWrapper } from "enzyme";
 import * as React from "react";
 import { spy } from "sinon";
 
-import { Classes as CoreClasses, Menu, MenuItem, Keys } from "@blueprintjs/core";
+import { Classes as CoreClasses, Menu, MenuItem, Keys } from "@blueprint-modernized/core";
 
 import {
     Classes,

@@ -10,7 +10,7 @@ on the container will focus the text input for seamless interaction.
 <div class="@ns-callout @ns-intent-success @ns-icon-info-sign">
     <h4 class="@ns-heading">Looking for a dropdown menu?</h4>
 
-[`MultiSelect` in the **@blueprintjs/select** package](#select/multi-select)
+[`MultiSelect` in the **@blueprint-modernized/select** package](#select/multi-select)
 composes this component with a dropdown menu of suggestions.
 
 </div>

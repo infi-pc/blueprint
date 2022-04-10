@@ -13,7 +13,7 @@
  * limitations under the License.
  */
 
-import "@blueprintjs/test-commons/bootstrap";
+import "@blueprint-modernized/test-commons/bootstrap";
 
 import "./contextMenu2Tests";
 import "./popover2Tests";

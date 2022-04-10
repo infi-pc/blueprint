@@ -54,7 +54,7 @@ custom evaluation code has not been tested robustly.
 
 @## JavaScript API
 
-The `NumericInput` component is available in the **@blueprintjs/core** package.
+The `NumericInput` component is available in the **@blueprint-modernized/core** package.
 Make sure to review the [getting started docs for installation info](#blueprint/getting-started).
 
 @interface INumericInputProps
@@ -78,7 +78,7 @@ users to type non-numeric digits like `.` and `-` (for decimals and negative num
 more easily.
 
 ```tsx
-import { NumericInput } from "@blueprintjs/core";
+import { NumericInput } from "@blueprint-modernized/core";
 
 export class NumericInputExample extends React.Component {
     public render() {
@@ -124,7 +124,7 @@ powerful ways. As shown in the example above, one could extend the numeric input
 component with support for mathematical expressions as follows:
 
 ```tsx
-import { NumericInput } from "@blueprintjs/core";
+import { NumericInput } from "@blueprint-modernized/core";
 import * as SomeLibrary from "some-library";
 
 export class NumericInputExample extends React.Component<{}, { value?: number |

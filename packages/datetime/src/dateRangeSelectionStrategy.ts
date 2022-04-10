@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { Boundary } from "@blueprintjs/core";
+import { Boundary } from "@blueprint-modernized/core";
 
 import { DateRange } from "./common/dateRange";
 import { areSameDay } from "./common/dateUtils";

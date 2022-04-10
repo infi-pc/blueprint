@@ -1,7 +1,7 @@
 // Copyright 2015 Palantir Technologies, Inc. All rights reserved.
 // Licensed under the Apache License, Version 2.0.
 
-@import "~@blueprintjs/icons/lib/scss/variables";
+@import "~@blueprint-modernized/icons/lib/scss/variables";
 @import "../../common/mixins";
 @import "../../common/react-transition";
 @import "../../common/variables";
@@ -39,13 +39,10 @@ $dialog-margin: ($pt-grid-size * 3) 0 !default;
 $dialog-padding: $pt-grid-size * 2 !default;
 
 .#{$ns}-dialog-container {
-  $dialog-transition-props: (
-    opacity: (0, 1),
-    transform: (scale(0.5), scale(1))
-  );
+  $dialog-transition-props: (opacity: (0, 1),
+      transform: (scale(0.5), scale(1)));
 
-  @include react-transition(
-    "#{$ns}-overlay",
+  @include react-transition("#{$ns}-overlay",
     $dialog-transition-props,
     $duration: $pt-transition-duration * 3,
     $easing: $pt-transition-ease-bounce,

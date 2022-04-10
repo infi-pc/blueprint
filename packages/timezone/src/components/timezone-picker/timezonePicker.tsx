@@ -27,8 +27,8 @@ import {
     IPopoverProps,
     Props,
     MenuItem,
-} from "@blueprintjs/core";
-import { ItemListPredicate, ItemRenderer, Select } from "@blueprintjs/select";
+} from "@blueprint-modernized/core";
+import { ItemListPredicate, ItemRenderer, Select } from "@blueprint-modernized/select";
 
 import * as Classes from "../../common/classes";
 import * as Errors from "../../common/errors";

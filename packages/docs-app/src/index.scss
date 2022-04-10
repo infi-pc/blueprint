@@ -61,8 +61,7 @@ $pt-intent-success2: #0d8050;
 $pt-intent-warning2: #bf7326;
 $pt-intent-danger2: #c23030;
 
-$pt-intent-text-colors: (
-  "primary": $indigo2,
+$pt-intent-text-colors: ("primary": $indigo2,
   "success": #0d8050,
   "warning": #bf7326,
   "danger": #c23030,
@@ -74,24 +73,19 @@ $pt-dark-link-color: $indigo5;
 $pt-text-selection-color: hsla(250, 100%, 80%, 0.3);
 
 // Overwriting button "intent": default, hover, active colors)
-$button-intents: (
-  "primary": (
-    $pt-intent-primary,
+$button-intents: ("primary": ($pt-intent-primary,
     $pt-intent-primary2,
     $pt-intent-primary1,
   ),
-  "success": (
-    $pt-intent-success,
+  "success": ($pt-intent-success,
     $pt-intent-success2,
     $pt-intent-success1,
   ),
-  "warning": (
-    $pt-intent-success,
+  "warning": ($pt-intent-success,
     $pt-intent-success2,
     $pt-intent-success1,
   ),
-  "danger": (
-    $pt-intent-danger,
+  "danger": ($pt-intent-danger,
     $pt-intent-danger2,
     $pt-intent-danger1,
   ),
@@ -99,25 +93,25 @@ $button-intents: (
 
 @import "~normalize.css/normalize.css";
 
-@import "~@blueprintjs/core/src/blueprint.scss";
-// @import "~@blueprintjs/icons/src/blueprint-icons.scss";
-// @import "~@blueprintjs/datetime/src/blueprint-datetime.scss";
-// @import "~@blueprintjs/popover2/src/blueprint-popover2.scss";
-@import "~@blueprintjs/select/src/blueprint-select.scss";
+@import "~@blueprint-modernized/core/src/blueprint.scss";
+// @import "~@blueprint-modernized/icons/src/blueprint-icons.scss";
+// @import "~@blueprint-modernized/datetime/src/blueprint-datetime.scss";
+// @import "~@blueprint-modernized/popover2/src/blueprint-popover2.scss";
+@import "~@blueprint-modernized/select/src/blueprint-select.scss";
 
 // import these first because they're the base layer
-// @import "~@blueprintjs/core/lib/css/blueprint.css";
-@import "~@blueprintjs/datetime/lib/css/blueprint-datetime.css";
-@import "~@blueprintjs/icons/lib/css/blueprint-icons.css";
-@import "~@blueprintjs/popover2/lib/css/blueprint-popover2.css";
-// @import "~@blueprintjs/select/lib/css/blueprint-select.css";
-@import "~@blueprintjs/table/lib/css/table.css";
-@import "~@blueprintjs/timezone/lib/css/blueprint-timezone.css";
+// @import "~@blueprint-modernized/core/lib/css/blueprint.css";
+@import "~@blueprint-modernized/datetime/lib/css/blueprint-datetime.css";
+@import "~@blueprint-modernized/icons/lib/css/blueprint-icons.css";
+@import "~@blueprint-modernized/popover2/lib/css/blueprint-popover2.css";
+// @import "~@blueprint-modernized/select/lib/css/blueprint-select.css";
+@import "~@blueprint-modernized/table/lib/css/table.css";
+@import "~@blueprint-modernized/timezone/lib/css/blueprint-timezone.css";
 
 // then the docs theme styles
-@import "~@blueprintjs/docs-theme/src/docs-theme.scss";
-// @import "~@blueprintjs/docs-theme/lib/css/docs-theme.css";
-@import "~@blueprintjs/docs-theme/src/styles/variables";
+@import "~@blueprint-modernized/docs-theme/src/docs-theme.scss";
+// @import "~@blueprint-modernized/docs-theme/lib/css/docs-theme.css";
+@import "~@blueprint-modernized/docs-theme/src/styles/variables";
 
 // then our own styles
 @import "styles/colors";

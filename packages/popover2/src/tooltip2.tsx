@@ -17,7 +17,7 @@
 import classNames from "classnames";
 import * as React from "react";
 
-import { Classes as CoreClasses, DISPLAYNAME_PREFIX, IntentProps } from "@blueprintjs/core";
+import { Classes as CoreClasses, DISPLAYNAME_PREFIX, IntentProps } from "@blueprint-modernized/core";
 
 import * as Classes from "./classes";
 // eslint-disable-next-line import/no-cycle

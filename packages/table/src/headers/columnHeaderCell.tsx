@@ -25,7 +25,7 @@ import {
     Popover,
     Position,
     Utils as CoreUtils,
-} from "@blueprintjs/core";
+} from "@blueprint-modernized/core";
 
 import * as Classes from "../common/classes";
 import { columnInteractionBarContextTypes, IColumnInteractionBarContextTypes } from "../common/context";

@@ -59,7 +59,7 @@ function walk(ctx: Lint.WalkContext<void>) {
                 const replacements = [new Lint.Replacement(node.getStart(), node.getWidth(), replacementText)];
                 if (shouldFixImports) {
                     // add an import statement for `Classes` constants at most once.
-                    replacements.unshift(addImportToFile(ctx.sourceFile, ["Classes"], "@blueprintjs/core"));
+                    replacements.unshift(addImportToFile(ctx.sourceFile, ["Classes"], "@blueprint-modernized/core"));
                     shouldFixImports = false;
                 }
 

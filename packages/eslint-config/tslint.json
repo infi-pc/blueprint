@@ -5,8 +5,8 @@
             "options": [
                 "core-js",
                 "react-dom",
-                "@blueprintjs/table/src",
-                "@blueprintjs/test-commons/bootstrap",
+                "@blueprint-modernized/table/src",
+                "@blueprint-modernized/test-commons/bootstrap",
                 "tsutils",
                 "@typescript-eslint/experimental-utils"
             ]

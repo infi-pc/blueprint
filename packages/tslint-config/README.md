@@ -1,6 +1,6 @@
 <img height="204" src="https://cloud.githubusercontent.com/assets/464822/20228152/d3f36dc2-a804-11e6-80ff-51ada2d13ea7.png">
 
-## Note: This package is deprecated in favour of `@blueprintjs/eslint-plugin`
+## Note: This package is deprecated in favour of `@blueprint-modernized/eslint-plugin`
 
 [TSLint is deprecated](https://medium.com/palantir/tslint-in-2019-1a144c2317a9), and as such Blueprint is transitioning to ESLint. Blueprint is now using ESLint in its own repository, and as such this package will be removed in a future major version.
 
@@ -14,23 +14,23 @@ This package contains configuration for [TSLint](https://palantir.github.io/tsli
 
 -   React & JSX rules from [tslint-react](https://github.com/palantir/tslint-react).
 -   [Prettier](https://github.com/prettier/prettier) integration for consistent code style and automatic fixes.
--   [Blueprint-specific rules](#Rules) for use with `@blueprintjs` components.
+-   [Blueprint-specific rules](#Rules) for use with `@blueprint-modernized` components.
 
 ## Installation
 
 ```
-yarn add @blueprintjs/tslint-config tslint
+yarn add @blueprint-modernized/tslint-config tslint
 ```
 
 ## Usage
 
-Simply extend this package in your `tslint.json` to use the default rules configuration. This configuration includes Blueprint-specific rules which enforce semantics particular to usage with `@blueprintjs` packages.
+Simply extend this package in your `tslint.json` to use the default rules configuration. This configuration includes Blueprint-specific rules which enforce semantics particular to usage with `@blueprint-modernized` packages.
 
 `tslint.json`
 
 ```json
 {
-    "extends": "@blueprintjs/tslint-config"
+    "extends": "@blueprint-modernized/tslint-config"
 }
 ```
 
@@ -43,7 +43,7 @@ To enable the Blueprint-specific rules _only_ without the full TSLint config, ex
 ```diff
 {
   "extends": [
-+   "@blueprintjs/tslint-config/blueprint-rules"
++   "@blueprint-modernized/tslint-config/blueprint-rules"
   ]
 }
 ```
@@ -58,7 +58,7 @@ To enable the Blueprint-specific rules _only_ without the full TSLint config, ex
 
 Enforce usage of `Classes` constants over namespaced string literals.
 
-Each `@blueprintjs` package exports a `Classes` object that contains constants for every CSS class defined by the package. While the values of the constants may change between releases, the names of the constants will remain more stable.
+Each `@blueprint-modernized` package exports a `Classes` object that contains constants for every CSS class defined by the package. While the values of the constants may change between releases, the names of the constants will remain more stable.
 
 ```json
 {
@@ -79,9 +79,9 @@ Enforce usage of JSX `Icon` components over `IconName` string literals (or vice-
 
 A fixer is available for this rule that will convert between string literals and named `Icon` components. Note that the implementation is naive and may require intervention, such as to import a component or fix an invalid name.
 
-Named icon components (`TickIcon`, `GraphIcon`, etc) can be imported from the `@blueprintjs/icons` package.
+Named icon components (`TickIcon`, `GraphIcon`, etc) can be imported from the `@blueprint-modernized/icons` package.
 
-This rule is disabled in the `blueprint-rules` config as it is most useful to ensure that the `@blueprintjs/icons` package can be tree-shaken (an opt-in process which requires using components and _never_ `IconName` literals).
+This rule is disabled in the `blueprint-rules` config as it is most useful to ensure that the `@blueprint-modernized/icons` package can be tree-shaken (an opt-in process which requires using components and _never_ `IconName` literals).
 
 ```js
 {

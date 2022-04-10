@@ -16,7 +16,7 @@
 
 import * as React from "react";
 
-import { AbstractPureComponent2, Props } from "@blueprintjs/core";
+import { AbstractPureComponent2, Props } from "@blueprint-modernized/core";
 
 import { Utils } from "../common/index";
 import { ILockableLayout, Orientation, ResizeHandle } from "./resizeHandle";

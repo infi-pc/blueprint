@@ -19,8 +19,8 @@ import { mount, ReactWrapper, shallow } from "enzyme";
 import * as React from "react";
 import * as sinon from "sinon";
 
-import { Menu } from "@blueprintjs/core";
-import { IQueryListProps } from "@blueprintjs/select";
+import { Menu } from "@blueprint-modernized/core";
+import { IQueryListProps } from "@blueprint-modernized/select";
 
 import { IFilm, renderFilm, TOP_100_FILMS } from "../../docs-app/src/common/films";
 import {

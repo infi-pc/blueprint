@@ -1,8 +1,8 @@
 // Copyright 2015 Palantir Technologies, Inc. All rights reserved.
 // Licensed under the Apache License, Version 2.0.
 
-@import "~@blueprintjs/core/src/components/forms/common";
-@import "~@blueprintjs/core/src/components/icon/icon-mixins";
+@import "~@blueprint-modernized/core/src/components/forms/common";
+@import "~@blueprint-modernized/core/src/components/icon/icon-mixins";
 @import "./common";
 
 $timepicker-input-row-height: $pt-grid-size * 3 !default;
@@ -27,7 +27,7 @@ $timepicker-control-width: $pt-grid-size * 3.3 !default;
     text-align: center;
     width: $timepicker-control-width;
 
-    + .#{$ns}-timepicker-arrow-button {
+    +.#{$ns}-timepicker-arrow-button {
       margin-left: $timepicker-divider-width;
     }
 
@@ -72,7 +72,8 @@ $timepicker-control-width: $pt-grid-size * 3.3 !default;
       box-shadow: input-transition-shadow($input-shadow-color-focus, true);
     }
 
-    @each $intent, $color in $pt-intent-colors {
+    @each $intent,
+    $color in $pt-intent-colors {
       &.#{$ns}-intent-#{$intent} {
         @include pt-input-intent($color);
 

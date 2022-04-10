@@ -17,9 +17,9 @@
 import classNames from "classnames";
 import * as React from "react";
 
-import { Classes, Menu, MenuDivider, MenuItem } from "@blueprintjs/core";
-import { Example, IExampleProps } from "@blueprintjs/docs-theme";
-import { ContextMenu2, ContextMenu2ChildrenProps, ContextMenu2ContentProps, Tooltip2 } from "@blueprintjs/popover2";
+import { Classes, Menu, MenuDivider, MenuItem } from "@blueprint-modernized/core";
+import { Example, IExampleProps } from "@blueprint-modernized/docs-theme";
+import { ContextMenu2, ContextMenu2ChildrenProps, ContextMenu2ContentProps, Tooltip2 } from "@blueprint-modernized/popover2";
 
 export const ContextMenu2Example: React.FC<IExampleProps> = props => {
     const renderContent = React.useCallback(

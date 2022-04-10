@@ -16,7 +16,7 @@
 
 import * as React from "react";
 
-import { MenuItemProps, MenuItem } from "@blueprintjs/core";
+import { MenuItemProps, MenuItem } from "@blueprint-modernized/core";
 
 import { Clipboard } from "../../common/clipboard";
 import { TABLE_COPY_FAILED } from "../../common/errors";

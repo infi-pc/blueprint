@@ -16,8 +16,8 @@
 
 import * as React from "react";
 
-import { Button, Classes, H1, Intent, Popover, Position, Switch, Tooltip } from "@blueprintjs/core";
-import { Example, IExampleProps } from "@blueprintjs/docs-theme";
+import { Button, Classes, H1, Intent, Popover, Position, Switch, Tooltip } from "@blueprint-modernized/core";
+import { Example, IExampleProps } from "@blueprint-modernized/docs-theme";
 
 /* eslint-disable deprecation/deprecation */
 

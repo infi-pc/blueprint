@@ -19,9 +19,9 @@ const stylelint = require("stylelint");
 
 const config = {
     customSyntax: "postcss-scss",
-    plugins: ["@blueprintjs/stylelint-plugin"],
+    plugins: ["@blueprint-modernized/stylelint-plugin"],
     rules: {
-        "@blueprintjs/no-prefix-literal": true,
+        "@blueprint-modernized/no-prefix-literal": true,
     },
 };
 
@@ -126,9 +126,9 @@ describe("no-prefix-literal", () => {
         const result = await stylelint.lint({
             files: "test/fixtures/no-prefix-literal/contains-bp3.scss",
             config: {
-                plugins: ["@blueprintjs/stylelint-plugin"],
+                plugins: ["@blueprint-modernized/stylelint-plugin"],
                 rules: {
-                    "@blueprintjs/no-prefix-literal": [
+                    "@blueprint-modernized/no-prefix-literal": [
                         true,
                         { disableFix: true, variablesImportPath: { sass: "some-path" } },
                     ],
@@ -142,9 +142,9 @@ describe("no-prefix-literal", () => {
         const result = await stylelint.lint({
             files: "test/fixtures/no-prefix-literal/contains-bp3.scss",
             config: {
-                plugins: ["@blueprintjs/stylelint-plugin"],
+                plugins: ["@blueprint-modernized/stylelint-plugin"],
                 rules: {
-                    "@blueprintjs/no-prefix-literal": [
+                    "@blueprint-modernized/no-prefix-literal": [
                         true,
                         {
                             disableFix: "yes",

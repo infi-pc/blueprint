@@ -41,7 +41,7 @@ Then, to register hotkeys and generate the relevant event handlers, use the comp
 
 ```tsx
 import React from "react";
-import { HotkeysTarget2, InputGroup } from "@blueprintjs/core";
+import { HotkeysTarget2, InputGroup } from "@blueprint-modernized/core";
 
 export default class extends React.PureComponent {
     private inputEl: HTMLInputElement | null = null;

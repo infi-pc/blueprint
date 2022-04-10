@@ -15,7 +15,7 @@ This package provides React components related to selecting items from a list:
 ## Installation
 
 ```
-npm install --save @blueprintjs/select
+npm install --save @blueprint-modernized/select
 ```
 
 ### [Full Documentation](http://blueprintjs.com/docs) | [Source Code](https://github.com/palantir/blueprint)

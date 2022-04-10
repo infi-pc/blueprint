@@ -33,8 +33,8 @@ or `<Tooltip2 openOnTargetFocus={false}>` in this scenario in order to avoid und
 UX where the tooltip could open automatically when a user doesn't want it to.
 
 ```tsx
-import { Button, mergeRefs } from "@blueprintjs/core";
-import { Popover2, Tooltip2 } from "@blueprintjs/popover2";
+import { Button, mergeRefs } from "@blueprint-modernized/core";
+import { Popover2, Tooltip2 } from "@blueprint-modernized/popover2";
 
 <Popover2
     content={<h1>Popover!</h1>}

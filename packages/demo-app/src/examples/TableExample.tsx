@@ -14,7 +14,7 @@ limitations under the License.*/
 
 import * as React from "react";
 
-import { Cell, Column, ColumnHeaderCell, Table2 } from "@blueprintjs/table";
+import { Cell, Column, ColumnHeaderCell, Table2 } from "@blueprint-modernized/table";
 
 import { ExampleCard } from "./ExampleCard";
 

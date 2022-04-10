@@ -1,10 +1,10 @@
-@import "~@blueprintjs/core/src/common/mixins";
+@import "~@blueprint-modernized/core/src/common/mixins";
 @import "../common/variables";
 
 $table-quadrant-z-index-main: 0;
-$table-quadrant-z-index-top: $table-quadrant-z-index-main + 1;
-$table-quadrant-z-index-left: $table-quadrant-z-index-top + 1;
-$table-quadrant-z-index-top-left: $table-quadrant-z-index-left + 1;
+$table-quadrant-z-index-top: $table-quadrant-z-index-main+1;
+$table-quadrant-z-index-left: $table-quadrant-z-index-top+1;
+$table-quadrant-z-index-top-left: $table-quadrant-z-index-left+1;
 
 // we mask the scrollable container with a smaller parent div to hide the scrollbars in the TOP,
 // LEFT, and TOP_LEFT quadrants. this value specifies the distance the scroll containers should

@@ -77,7 +77,7 @@ function create(context: RuleContext<MessageIds, []>, node: TSESTree.JSXOpeningE
                     // Add import for the new tag
                     const program = getProgram(node);
                     if (program !== undefined) {
-                        fixes.addFixes(addImportToFile(program, [newTagName], "@blueprintjs/core")(fixer));
+                        fixes.addFixes(addImportToFile(program, [newTagName], "@blueprint-modernized/core")(fixer));
                     }
 
                     return fixes.getFixes();

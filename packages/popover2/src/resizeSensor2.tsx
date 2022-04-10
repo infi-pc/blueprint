@@ -17,7 +17,7 @@
 import { ResizeObserver, ResizeObserverEntry } from "@juggle/resize-observer";
 import * as React from "react";
 
-import { AbstractPureComponent2, DISPLAYNAME_PREFIX } from "@blueprintjs/core";
+import { AbstractPureComponent2, DISPLAYNAME_PREFIX } from "@blueprint-modernized/core";
 
 /** `ResizeSensor2` requires a single DOM element child and will error otherwise. */
 export interface ResizeSensor2Props {

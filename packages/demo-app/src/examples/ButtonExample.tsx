@@ -14,8 +14,8 @@ limitations under the License.*/
 
 import * as React from "react";
 
-import { Button, Intent } from "@blueprintjs/core";
-import { IconNames } from "@blueprintjs/icons";
+import { Button, Intent } from "@blueprint-modernized/core";
+import { IconNames } from "@blueprint-modernized/icons";
 
 import { ExampleCard } from "./ExampleCard";
 

@@ -9,7 +9,7 @@ and a [`TimePicker`](#datetime/timepicker) into one container.
 Deprecated: use [Date picker](#datetime/datepicker)
 </h4>
 
-This component is **deprecated since @blueprintjs/datetime v3.2.0** with the addition
+This component is **deprecated since @blueprint-modernized/datetime v3.2.0** with the addition
 of `<DatePicker>` `timePrecision` and `timePickerProps` props to trivially
 compose time selection with the existing date selection.
 
@@ -29,7 +29,7 @@ You can pass props to the inner `DatePicker` and `TimePicker` components using
 `datePickerProps` and `timePickerProps`, respectively.
 
 ```tsx
-import { DateTimePicker } from "@blueprintjs/datetime";
+import { DateTimePicker } from "@blueprint-modernized/datetime";
 
 <DateTimePicker value={this.state.date} onChange={this.handleDateChange} />
 ```

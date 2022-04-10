@@ -14,7 +14,7 @@ limitations under the License.*/
 
 import * as React from "react";
 
-import { Callout, Intent } from "@blueprintjs/core";
+import { Callout, Intent } from "@blueprint-modernized/core";
 
 import { ExampleCard } from "./ExampleCard";
 

@@ -2,9 +2,9 @@
 // Licensed under the Apache License, Version 2.0.
 
 @use "sass:math";
-@import "~@blueprintjs/colors/lib/scss/colors";
-@import "~@blueprintjs/core/src/common/variables";
-@import "~@blueprintjs/core/src/common/react-transition";
+@import "~@blueprint-modernized/colors/lib/scss/colors";
+@import "~@blueprint-modernized/core/src/common/variables";
+@import "~@blueprint-modernized/core/src/common/react-transition";
 
 $pt-popover2-background-color: $white !default;
 $pt-popover2-box-shadow: $pt-elevation-shadow-3 !default;
@@ -47,13 +47,11 @@ $pt-dark-tooltip2-box-shadow: $pt-dark-popover-box-shadow !default;
 // set background and text colors. also set box-shadow if provided (so modifier styles don't have to
 // reassign default shadows).
 
-@mixin popover2-appearance(
-  $background-color,
+@mixin popover2-appearance($background-color,
   $text-color,
   $shadows,
   $arrow-drop-shadow-opacity,
-  $arrow-border-shadow-opacity
-) {
+  $arrow-border-shadow-opacity) {
   box-shadow: $shadows;
 
   .#{$ns}-popover2-content {
@@ -87,8 +85,7 @@ $pt-dark-tooltip2-box-shadow: $pt-dark-popover-box-shadow !default;
 }
 
 @mixin scale-transition() {
-  @include react-transition(
-    "#{$ns}-popover2",
+  @include react-transition("#{$ns}-popover2",
     (transform: scale(0.3) scale(1)),
     $duration: $pt-transition-duration * 3,
     $easing: $pt-transition-ease-bounce,

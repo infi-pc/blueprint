@@ -1,4 +1,4 @@
-@import "~@blueprintjs/core/lib/scss/variables";
+@import "~@blueprint-modernized/core/lib/scss/variables";
 
 $background-color: $light-gray2;
 $content-background-color: $white;
@@ -93,12 +93,15 @@ $dark-intent-danger-text: $red5;
   .#{$ns}-intent-primary {
     color: $intent-primary-text;
   }
+
   .#{$ns}-intent-success {
     color: $intent-success-text;
   }
+
   .#{$ns}-intent-warning {
     color: $intent-warning-text;
   }
+
   .#{$ns}-intent-danger {
     color: $intent-danger-text;
   }
@@ -107,12 +110,15 @@ $dark-intent-danger-text: $red5;
     .#{$ns}-intent-primary {
       color: $dark-intent-primary-text;
     }
+
     .#{$ns}-intent-success {
       color: $dark-intent-success-text;
     }
+
     .#{$ns}-intent-warning {
       color: $dark-intent-warning-text;
     }
+
     .#{$ns}-intent-danger {
       color: $dark-intent-danger-text;
     }
@@ -123,12 +129,15 @@ $dark-intent-danger-text: $red5;
   &.#{$ns}-intent-primary {
     color: $intent-primary-text;
   }
+
   &.#{$ns}-intent-success {
     color: $intent-success-text;
   }
+
   &.#{$ns}-intent-warning {
     color: $intent-warning-text;
   }
+
   &.#{$ns}-intent-danger {
     color: $intent-danger-text;
   }
@@ -137,12 +146,15 @@ $dark-intent-danger-text: $red5;
     &.#{$ns}-intent-primary {
       color: $dark-intent-primary-text;
     }
+
     &.#{$ns}-intent-success {
       color: $dark-intent-success-text;
     }
+
     &.#{$ns}-intent-warning {
       color: $dark-intent-warning-text;
     }
+
     &.#{$ns}-intent-danger {
       color: $dark-intent-danger-text;
     }

@@ -9,7 +9,7 @@ This package contains the next versions of Popover and Tooltip components. Note 
 ## Installation
 
 ```
-npm install --save @blueprintjs/popover2
+npm install --save @blueprint-modernized/popover2
 ```
 
 ### [Full Documentation](http://blueprintjs.com/docs) | [Source Code](https://github.com/palantir/blueprint)

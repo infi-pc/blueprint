@@ -15,11 +15,11 @@
 
 // @ts-check
 
-require("@blueprintjs/test-commons/bootstrap");
+require("@blueprint-modernized/test-commons/bootstrap");
 
 const React = require("react");
 
-const { generateIsomorphicTests } = require("@blueprintjs/test-commons");
+const { generateIsomorphicTests } = require("@blueprint-modernized/test-commons");
 
 const Core = require("../lib/cjs");
 

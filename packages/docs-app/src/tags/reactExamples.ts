@@ -16,7 +16,7 @@
 
 import * as React from "react";
 
-import { IExampleMap, IExampleProps } from "@blueprintjs/docs-theme";
+import { IExampleMap, IExampleProps } from "@blueprint-modernized/docs-theme";
 
 import { getTheme } from "../components/blueprintDocs";
 import * as CoreExamples from "../examples/core-examples";

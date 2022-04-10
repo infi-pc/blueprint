@@ -1,9 +1,9 @@
 // Copyright 2016 Palantir Technologies, Inc. All rights reserved.
 // Licensed under the Apache License, Version 2.0.
 
-@import "~@blueprintjs/icons/lib/scss/variables";
-@import "~@blueprintjs/core/src/common/react-transition";
-@import "~@blueprintjs/core/src/components/icon/icon-mixins";
+@import "~@blueprint-modernized/icons/lib/scss/variables";
+@import "~@blueprint-modernized/core/src/common/react-transition";
+@import "~@blueprint-modernized/core/src/components/icon/icon-mixins";
 
 // Generate a selector for a page ID by reference
 @function page($ref, $comparator: "$=") {
@@ -22,10 +22,21 @@
 //
 
 @keyframes docs-wiggle-rotate {
-  0% { transform: rotate(0); }
-  25% { transform: rotate(-3deg); }
-  75% { transform: rotate(3deg); }
-  100% { transform: rotate(0); }
+  0% {
+    transform: rotate(0);
+  }
+
+  25% {
+    transform: rotate(-3deg);
+  }
+
+  75% {
+    transform: rotate(3deg);
+  }
+
+  100% {
+    transform: rotate(0);
+  }
 }
 
 #{page("tree")} .#{$ns}-tree {
@@ -133,7 +144,7 @@
     position: relative;
     z-index: 1;
 
-    > div {
+    >div {
       background-color: $white;
       border-bottom-left-radius: 5px;
       border-bottom-right-radius: 5px;
@@ -150,7 +161,7 @@
     width: 0;
     z-index: 2;
 
-    > div {
+    >div {
       background-color: $black;
       color: $white;
       height: $pt-grid-size * 16;
@@ -160,7 +171,7 @@
     }
   }
 
-  .piano-key-pressed > div {
+  .piano-key-pressed>div {
     background-color: $pt-intent-primary;
     color: $white;
   }
@@ -228,23 +239,17 @@
 // prettier-ignore
 .docs-overlay-example-transition {
   $overlay-example-width: $pt-grid-size * 40;
-  $enter: (
-    transform: (translateY(-50vh) rotate(-10deg), translateY(0) rotate(0deg))
-  );
-  $leave: (
-    transform: (translateY(150vh) rotate(-20deg), translateY(0) rotate(0deg))
-  );
+  $enter: (transform: (translateY(-50vh) rotate(-10deg), translateY(0) rotate(0deg)));
+  $leave: (transform: (translateY(150vh) rotate(-20deg), translateY(0) rotate(0deg)));
 
-  @include react-transition-phase(
-    "#{$ns}-overlay",
+  @include react-transition-phase("#{$ns}-overlay",
     "enter",
     $enter,
     $pt-transition-duration * 3,
     $pt-transition-ease-bounce,
     $before: "&"
   );
-  @include react-transition-phase(
-    "#{$ns}-overlay",
+  @include react-transition-phase("#{$ns}-overlay",
     "exit",
     $leave,
     $pt-transition-duration * 5,
@@ -281,7 +286,7 @@
     margin: 0;
     width: 1600px;
 
-    > p {
+    >p {
       margin-top: $pt-grid-size;
     }
   }
@@ -435,6 +440,7 @@
 
 .docs-popover2-portal-example,
 .docs-popover-portal-example {
+
   .docs-popover2-portal-example-scroll-container,
   .docs-popover-portal-example-scroll-container {
     background: $light-gray3;
@@ -470,6 +476,7 @@
 
 .docs-popover2-portal-example-popover,
 .docs-popover-portal-example-popover {
+
   .#{$ns}-popover2-content,
   .#{$ns}-popover-content {
     padding: $pt-grid-size;
@@ -491,7 +498,7 @@
   .docs-example {
     flex-direction: column;
 
-    > * {
+    >* {
       margin: $pt-grid-size * 0.5;
     }
   }
@@ -499,7 +506,7 @@
 
 #{example("ButtonGroupExample")},
 #{example("ButtonGroupPopoverExample")} {
-  .docs-example > * {
+  .docs-example>* {
     margin: 0;
   }
 }
@@ -529,7 +536,7 @@
 }
 
 #{example("DateInputExample")} {
-  .docs-example > * {
+  .docs-example>* {
     margin: 0 0 20px;
   }
 }
@@ -539,6 +546,7 @@
 //
 
 #{page("table", "^=")} {
+
   // make all tables the same width & height
   .#{$ns}-table-container {
     height: $pt-grid-size * 36;

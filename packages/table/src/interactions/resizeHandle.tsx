@@ -17,7 +17,7 @@
 import classNames from "classnames";
 import * as React from "react";
 
-import { Props } from "@blueprintjs/core";
+import { Props } from "@blueprint-modernized/core";
 
 import * as Classes from "../common/classes";
 import { Draggable } from "./draggable";

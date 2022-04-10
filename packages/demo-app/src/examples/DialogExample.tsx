@@ -14,7 +14,7 @@ limitations under the License.*/
 
 import * as React from "react";
 
-import { Button, Classes, Dialog } from "@blueprintjs/core";
+import { Button, Classes, Dialog } from "@blueprint-modernized/core";
 
 import { ExampleCard } from "./ExampleCard";
 

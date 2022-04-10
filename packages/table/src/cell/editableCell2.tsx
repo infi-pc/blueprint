@@ -24,7 +24,7 @@ import {
     EditableTextProps,
     Utils as CoreUtils,
     UseHotkeysReturnValue,
-} from "@blueprintjs/core";
+} from "@blueprint-modernized/core";
 
 import * as Classes from "../common/classes";
 import { Draggable } from "../interactions/draggable";

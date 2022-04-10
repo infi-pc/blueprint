@@ -2,7 +2,7 @@
 // Licensed under the Apache License, Version 2.0.
 
 @import "../../common/variables";
-@import "~@blueprintjs/icons/lib/scss/variables";
+@import "~@blueprint-modernized/icons/lib/scss/variables";
 @import "../../common/mixins";
 
 @import "./common";
@@ -51,7 +51,8 @@ Styleguide menu
 .#{$ns}-menu-item {
   @include menu-item();
 
-  @each $intent, $colors in $menu-item-intent-colors {
+  @each $intent,
+  $colors in $menu-item-intent-colors {
     @include menu-item-intent($intent, false, $colors...);
   }
 
@@ -114,7 +115,8 @@ Styleguide menu-header
   .#{$ns}-menu-item {
     @include dark-menu-item();
 
-    @each $intent, $colors in $dark-menu-item-intent-colors {
+    @each $intent,
+    $colors in $dark-menu-item-intent-colors {
       @include menu-item-intent($intent, true, $colors...);
     }
   }
@@ -124,7 +126,7 @@ Styleguide menu-header
     border-color: $pt-dark-divider-white;
   }
 
-  .#{$ns}-menu-header > h6 {
+  .#{$ns}-menu-header>h6 {
     color: $pt-dark-heading-color;
   }
 }

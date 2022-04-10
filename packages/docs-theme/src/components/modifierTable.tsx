@@ -17,7 +17,7 @@
 import classNames from "classnames";
 import * as React from "react";
 
-import { Classes, HTMLTable } from "@blueprintjs/core";
+import { Classes, HTMLTable } from "@blueprint-modernized/core";
 
 export interface IModifierTableProps {
     /** Message to display when children is empty. */

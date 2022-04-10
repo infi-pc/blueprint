@@ -2,7 +2,7 @@
 
 @## Installing Blueprint
 
-Blueprint is available as a collection of NPM packages under the `@blueprintjs`
+Blueprint is available as a collection of NPM packages under the `@blueprint-modernized`
 scope. Each package appears at the top level of the sidebar to the left, along
 with its current version.
 
@@ -15,13 +15,13 @@ The `main` module exports all symbols from all modules so you don't have to impo
     `npm` or `yarn`, pulling in all relevant dependencies:
 
     ```sh
-    yarn add @blueprintjs/core react react-dom
+    yarn add @blueprint-modernized/core react react-dom
     ```
 
 1.  After installation, you'll be able to import the React components in your application:
 
     ```tsx
-    import { Button, Spinner } from "@blueprintjs/core";
+    import { Button, Spinner } from "@blueprint-modernized/core";
 
     // using JSX:
     const mySpinner = <Spinner intent="primary" />;
@@ -36,8 +36,8 @@ The `main` module exports all symbols from all modules so you don't have to impo
     ```css.scss
     // using node-style package resolution in a CSS file:
     @import "~normalize.css";
-    @import "~@blueprintjs/core/lib/css/blueprint.css";
-    @import "~@blueprintjs/icons/lib/css/blueprint-icons.css";
+    @import "~@blueprint-modernized/core/lib/css/blueprint.css";
+    @import "~@blueprint-modernized/icons/lib/css/blueprint-icons.css";
     ```
 
     ```html
@@ -45,8 +45,8 @@ The `main` module exports all symbols from all modules so you don't have to impo
     <head>
         <!-- include dependencies manually -->
         <link href="path/to/node_modules/normalize.css/normalize.css" rel="stylesheet" />
-        <link href="path/to/node_modules/@blueprintjs/core/lib/css/blueprint.css" rel="stylesheet" />
-        <link href="path/to/node_modules/@blueprintjs/icons/lib/css/blueprint-icons.css" rel="stylesheet" />
+        <link href="path/to/node_modules/@blueprint-modernized/core/lib/css/blueprint.css" rel="stylesheet" />
+        <link href="path/to/node_modules/@blueprint-modernized/icons/lib/css/blueprint-icons.css" rel="stylesheet" />
         <!-- NOTE: blueprint-icons.css file must be included alongside blueprint.css! -->
     </head>
     ```
@@ -78,7 +78,7 @@ We recommend polyfilling these features using [core-js](https://github.com/zloir
 @### DOM4
 
 Blueprint relies on a handful of DOM Level 4 API methods: `el.closest()` and `el.contains()`.
-`@blueprintjs/core` depends on a [polyfill library called `dom4`](https://webreflection.github.io/dom4/) to ensure
+`@blueprint-modernized/core` depends on a [polyfill library called `dom4`](https://webreflection.github.io/dom4/) to ensure
 these methods are available. This module is conditionally loaded if Blueprint is used in a browser environment.
 
 @## TypeScript
@@ -88,7 +88,7 @@ the NPM package and should be resolved automatically by the compiler. However, y
 install typings for Blueprint's dependencies before you can consume it:
 
 ```sh
-# required for all @blueprintjs packages:
+# required for all @blueprint-modernized packages:
 npm install --save @types/react @types/react-dom
 ```
 
@@ -109,7 +109,7 @@ You can render any component in any JavaScript application with `ReactDOM.render
 using a jQuery plugin.
 
 ```tsx
-import { Classes, Spinner } from "@blueprintjs/core";
+import { Classes, Spinner } from "@blueprint-modernized/core";
 
 const myContainerElement = document.getElementById("container");
 
@@ -155,8 +155,8 @@ These bundles _do not include_ external dependencies; your application will need
         <!-- Style dependencies -->
         <link href="https://unpkg.com/normalize.css@^8.0.1" rel="stylesheet" />
         <!-- Blueprint stylesheets -->
-        <link href="https://unpkg.com/@blueprintjs/icons@^4.0.0/lib/css/blueprint-icons.css" rel="stylesheet" />
-        <link href="https://unpkg.com/@blueprintjs/core@^4.0.0/lib/css/blueprint.css" rel="stylesheet" />
+        <link href="https://unpkg.com/@blueprint-modernized/icons@^4.0.0/lib/css/blueprint-icons.css" rel="stylesheet" />
+        <link href="https://unpkg.com/@blueprint-modernized/core@^4.0.0/lib/css/blueprint.css" rel="stylesheet" />
     </head>
     <body>
         <!-- Blueprint dependencies -->
@@ -169,8 +169,8 @@ These bundles _do not include_ external dependencies; your application will need
         <script src="https://unpkg.com/@popperjs/core@^2.5.4/dist/umd/popper.js"></script>
         <script src="https://unpkg.com/react-popper@^2.2.4/dist/index.umd.min.js"></script>
         <!-- Blueprint packages (note: packages must be topo-sorted, where dependencies come first) -->
-        <script src="https://unpkg.com/@blueprintjs/icons@^4.0.0"></script>
-        <script src="https://unpkg.com/@blueprintjs/core@^4.0.0"></script>
+        <script src="https://unpkg.com/@blueprint-modernized/icons@^4.0.0"></script>
+        <script src="https://unpkg.com/@blueprint-modernized/core@^4.0.0"></script>
 
         <div id="btn"></div>
         <script>

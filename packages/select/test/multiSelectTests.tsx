@@ -19,8 +19,8 @@ import { mount } from "enzyme";
 import * as React from "react";
 import * as sinon from "sinon";
 
-import { Classes as CoreClasses, Keys, Tag } from "@blueprintjs/core";
-import { dispatchTestKeyboardEventWithCode } from "@blueprintjs/test-commons";
+import { Classes as CoreClasses, Keys, Tag } from "@blueprint-modernized/core";
+import { dispatchTestKeyboardEventWithCode } from "@blueprint-modernized/test-commons";
 
 // this is an awkward import across the monorepo, but we'd rather not introduce a cyclical dependency or create another package
 import { IFilm, renderFilm, TOP_100_FILMS } from "../../docs-app/src/common/films";

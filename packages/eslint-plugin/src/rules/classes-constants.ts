@@ -79,7 +79,7 @@ function create(context: RuleContext<MessageIds, []>, node: TSESTree.Literal | T
                 // Add import for the Classes enum
                 const program = getProgram(node);
                 if (program !== undefined) {
-                    fixes.addFixes(addImportToFile(program, ["Classes"], "@blueprintjs/core")(fixer));
+                    fixes.addFixes(addImportToFile(program, ["Classes"], "@blueprint-modernized/core")(fixer));
                 }
 
                 return fixes.getFixes();

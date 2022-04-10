@@ -14,7 +14,7 @@ limitations under the License.*/
 
 import * as React from "react";
 
-import { Classes, HTMLTable } from "@blueprintjs/core";
+import { Classes, HTMLTable } from "@blueprint-modernized/core";
 
 import { ExampleCard } from "./ExampleCard";
 

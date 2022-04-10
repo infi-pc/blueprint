@@ -14,7 +14,7 @@ an [`OverflowList`](#core/components/overflow-list) to automatically collapse
 breadcrumbs that do not fit in the available space.
 
 ```tsx
-const { Breadcrumbs, IBreadcrumbProps, Icon } = "@blueprintjs/core";
+const { Breadcrumbs, IBreadcrumbProps, Icon } = "@blueprint-modernized/core";
 
 const BREADCRUMBS: IBreadcrumbProps[] = [
     { href: "/users", icon: "folder-close", text: "Users" },

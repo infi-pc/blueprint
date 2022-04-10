@@ -13,8 +13,8 @@
  * limitations under the License.
  */
 
-require("@blueprintjs/test-commons/bootstrap");
-const { generateIsomorphicTests } = require("@blueprintjs/test-commons");
+require("@blueprint-modernized/test-commons/bootstrap");
+const { generateIsomorphicTests } = require("@blueprint-modernized/test-commons");
 const React = require("react");
 const DateTime = require("../lib/cjs");
 

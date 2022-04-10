@@ -15,7 +15,7 @@
 
 import * as React from "react";
 
-import { HotkeyConfig } from "@blueprintjs/core";
+import { HotkeyConfig } from "@blueprint-modernized/core";
 
 import type { ColumnProps } from "./column";
 import { RegionCardinality } from "./regions";

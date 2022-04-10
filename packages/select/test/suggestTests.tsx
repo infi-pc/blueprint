@@ -19,7 +19,7 @@ import { mount, ReactWrapper } from "enzyme";
 import * as React from "react";
 import * as sinon from "sinon";
 
-import { InputGroup, IPopoverProps, Keys, MenuItem, Popover } from "@blueprintjs/core";
+import { InputGroup, IPopoverProps, Keys, MenuItem, Popover } from "@blueprint-modernized/core";
 
 import { IFilm, renderFilm, TOP_100_FILMS } from "../../docs-app/src/common/films";
 import { IItemRendererProps, QueryList } from "../src";

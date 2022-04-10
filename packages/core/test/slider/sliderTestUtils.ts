@@ -16,7 +16,7 @@
 
 import { ReactWrapper } from "enzyme";
 
-import { dispatchMouseEvent, dispatchTouchEvent } from "@blueprintjs/test-commons";
+import { dispatchMouseEvent, dispatchTouchEvent } from "@blueprint-modernized/test-commons";
 
 import { Handle, IInternalHandleProps } from "../../src/components/slider/handle";
 

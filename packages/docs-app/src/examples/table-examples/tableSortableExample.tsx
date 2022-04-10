@@ -18,8 +18,8 @@
 
 import * as React from "react";
 
-import { Menu, MenuItem } from "@blueprintjs/core";
-import { Example, IExampleProps } from "@blueprintjs/docs-theme";
+import { Menu, MenuItem } from "@blueprint-modernized/core";
+import { Example, IExampleProps } from "@blueprint-modernized/docs-theme";
 import {
     Cell,
     Column,
@@ -29,7 +29,7 @@ import {
     SelectionModes,
     Table2,
     Utils,
-} from "@blueprintjs/table";
+} from "@blueprint-modernized/table";
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const sumo: any[] = require("./sumo.json");

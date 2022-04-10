@@ -8,42 +8,42 @@ This package contains the [stylelint](https://stylelint.io/) plugin for Blueprin
 
 **Key features:**
 
--   [Blueprint-specific rules](#Rules) for use with `@blueprintjs` components.
+-   [Blueprint-specific rules](#Rules) for use with `@blueprint-modernized` components.
 
 ## Installation
 
 ```
-yarn add --dev @blueprintjs/stylelint-plugin
+yarn add --dev @blueprint-modernized/stylelint-plugin
 ```
 
 ## Usage
 
-Simply add this plugin in your `.stylelintrc` file and then pick the rules that you need. The plugin includes Blueprint-specific rules which enforce semantics particular to usage with `@blueprintjs` packages, but does not turn them on by default.
+Simply add this plugin in your `.stylelintrc` file and then pick the rules that you need. The plugin includes Blueprint-specific rules which enforce semantics particular to usage with `@blueprint-modernized` packages, but does not turn them on by default.
 
 `.stylelintrc`
 
 ```json
 {
     "plugins": [
-        "@blueprintjs/stylelint-plugin"
+        "@blueprint-modernized/stylelint-plugin"
     ],
     "rules": {
-        "@blueprintjs/no-color-literal": true,
-        "@blueprintjs/no-prefix-literal": true
+        "@blueprint-modernized/no-color-literal": true,
+        "@blueprint-modernized/no-prefix-literal": true
     }
 }
 ```
 
 ## Rules
 
-### `@blueprintjs/no-color-literal` (autofixable)
+### `@blueprint-modernized/no-color-literal` (autofixable)
 
 Enforce usage of the color variables instead of color literals.
 
 ```json
 {
     "rules": {
-        "@blueprintjs/no-color-literal": true
+        "@blueprint-modernized/no-color-literal": true
     }
 }
 ```
@@ -52,7 +52,7 @@ Enforce usage of the color variables instead of color literals.
 -.my-class {
 -    border: 1px solid #137CBD;
 -}
-+ @import "~@blueprintjs/core/lib/scss/variables";
++ @import "~@blueprint-modernized/core/lib/scss/variables";
 +
 +.my-class {
 +    border: 1px solid $blue3;
@@ -65,16 +65,16 @@ Optional secondary options:
 - `variablesImportPath: { less?: string, sass?: string }` - can be used to configure a custom path for importing Blueprint variables when autofixing.
 
 
-### `@blueprintjs/no-prefix-literal` (autofixable)
+### `@blueprint-modernized/no-prefix-literal` (autofixable)
 
 Enforce usage of the `bp-ns` constant over namespaced string literals.
 
-The `@blueprintjs` package exports a `bp-ns` CSS variable which contains the prefix for the current version of Blueprint (`bp3` for Blueprint 3, `bp4` for Blueprint 4, and etc). Using the variable instead of hardcoding the prefix means that your code will still work when new major version of Blueprint is released.
+The `@blueprint-modernized` package exports a `bp-ns` CSS variable which contains the prefix for the current version of Blueprint (`bp3` for Blueprint 3, `bp4` for Blueprint 4, and etc). Using the variable instead of hardcoding the prefix means that your code will still work when new major version of Blueprint is released.
 
 ```json
 {
     "rules": {
-        "@blueprintjs/no-prefix-literal": true
+        "@blueprint-modernized/no-prefix-literal": true
     }
 }
 ```
@@ -83,7 +83,7 @@ The `@blueprintjs` package exports a `bp-ns` CSS variable which contains the pre
 -.bp3-button > div {
 -    border: 1px solid black;
 -}
-+ @import "~@blueprintjs/core/lib/scss/variables";
++ @import "~@blueprint-modernized/core/lib/scss/variables";
 +
 +.#{$bp-ns}-button > div {
 +    border: 1px solid black;

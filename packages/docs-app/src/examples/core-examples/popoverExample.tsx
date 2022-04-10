@@ -37,14 +37,14 @@ import {
     RadioGroup,
     Slider,
     Switch,
-} from "@blueprintjs/core";
+} from "@blueprint-modernized/core";
 import {
     Example,
     handleBooleanChange,
     handleNumberChange,
     handleValueChange,
     IExampleProps,
-} from "@blueprintjs/docs-theme";
+} from "@blueprint-modernized/docs-theme";
 
 const INTERACTION_KINDS = [
     { label: "Click", value: PopoverInteractionKind.CLICK.toString() },

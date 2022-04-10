@@ -14,8 +14,8 @@ limitations under the License.*/
 
 import * as React from "react";
 
-import { Classes } from "@blueprintjs/core";
-import { DatePicker } from "@blueprintjs/datetime";
+import { Classes } from "@blueprint-modernized/core";
+import { DatePicker } from "@blueprint-modernized/datetime";
 
 import { ExampleCard } from "./ExampleCard";
 

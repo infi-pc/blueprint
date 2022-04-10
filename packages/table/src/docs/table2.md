@@ -4,7 +4,7 @@ tag: new
 
 @# Table2
 
-As of `@blueprintjs/table` v3.9.0, there are two versions of the table component API, exported as `Table` and `Table2`.
+As of `@blueprint-modernized/table` v3.9.0, there are two versions of the table component API, exported as `Table` and `Table2`.
 All the documentation examples here use the newer Table2 API.
 
 These two are functionally the same except for the fact that Table2 uses the new hotkeys API via
@@ -12,8 +12,8 @@ These two are functionally the same except for the fact that Table2 uses the new
 [HotkeysProvider](#core/context/hotkeys-provider) in your application in order to use Table2.
 
 ```tsx
-import { HotkeysProvider } from "@blueprintjs/core";
-import { Column, Table2 } from "@blueprintjs/table";
+import { HotkeysProvider } from "@blueprint-modernized/core";
+import { Column, Table2 } from "@blueprint-modernized/table";
 import React from "react";
 import ReactDOM from "react-dom";
 

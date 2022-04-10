@@ -19,7 +19,7 @@ import { mount } from "enzyme";
 import * as React from "react";
 import * as sinon from "sinon";
 
-import { Classes as CoreClasses, InputGroup, Intent, Keys, Popover, Position } from "@blueprintjs/core";
+import { Classes as CoreClasses, InputGroup, Intent, Keys, Popover, Position } from "@blueprint-modernized/core";
 
 import { Classes, DateInput, DatePicker, IDateInputProps, TimePicker, TimePrecision } from "../src";
 import { Months } from "../src/common/months";

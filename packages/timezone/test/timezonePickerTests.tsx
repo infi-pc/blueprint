@@ -29,8 +29,8 @@ import {
     MenuItem,
     Popover,
     Position,
-} from "@blueprintjs/core";
-import { QueryList, Select } from "@blueprintjs/select";
+} from "@blueprint-modernized/core";
+import { QueryList, Select } from "@blueprint-modernized/select";
 
 import { ITimezonePickerProps, ITimezonePickerState, TimezoneDisplayFormat, TimezonePicker } from "../src";
 import {

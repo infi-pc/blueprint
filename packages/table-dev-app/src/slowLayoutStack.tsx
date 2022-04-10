@@ -16,7 +16,7 @@
 
 import * as React from "react";
 
-import { Utils } from "@blueprintjs/table/src";
+import { Utils } from "@blueprint-modernized/table/src";
 
 export interface ISlowLayoutStackProps {
     /**

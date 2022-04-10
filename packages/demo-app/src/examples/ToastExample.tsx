@@ -14,7 +14,7 @@ limitations under the License.*/
 
 import * as React from "react";
 
-import { Intent, Toast } from "@blueprintjs/core";
+import { Intent, Toast } from "@blueprint-modernized/core";
 
 import { ExampleCard } from "./ExampleCard";
 

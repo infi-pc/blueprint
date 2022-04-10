@@ -14,7 +14,7 @@ limitations under the License.*/
 
 import * as React from "react";
 
-import { Classes, Intent, Menu, MenuDivider, MenuItem } from "@blueprintjs/core";
+import { Classes, Intent, Menu, MenuDivider, MenuItem } from "@blueprint-modernized/core";
 
 import { ExampleCard } from "./ExampleCard";
 

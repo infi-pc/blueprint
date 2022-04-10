@@ -16,9 +16,9 @@
 
 import * as React from "react";
 
-import { Button, H5, HotkeysTarget2, KeyCombo, MenuItem, Position, Switch, Toaster } from "@blueprintjs/core";
-import { Example, handleBooleanChange, IExampleProps } from "@blueprintjs/docs-theme";
-import { Omnibar } from "@blueprintjs/select";
+import { Button, H5, HotkeysTarget2, KeyCombo, MenuItem, Position, Switch, Toaster } from "@blueprint-modernized/core";
+import { Example, handleBooleanChange, IExampleProps } from "@blueprint-modernized/docs-theme";
+import { Omnibar } from "@blueprint-modernized/select";
 
 import { areFilmsEqual, createFilm, filmSelectProps, IFilm, renderCreateFilmOption } from "./../../common/films";
 

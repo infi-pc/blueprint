@@ -7,7 +7,7 @@ Deprecated: use [useHotkeys](#core/hooks/use-hotkeys)
 
 </h4>
 
-This API is **deprecated since @blueprintjs/core v3.39.0** in favor of the new
+This API is **deprecated since @blueprint-modernized/core v3.39.0** in favor of the new
 [`useHotkeys` hook](#core/hooks/use-hotkeys) and
 [HotkeysTarget2 component](#core/components/hotkeys-target2) available to React 16.8+ users.
 You should migrate to one of these new APIs, as they will become the standard in Blueprint v5.
@@ -29,7 +29,7 @@ and attach the appropriate key listeners.
 1. Define your `<Hotkey>`s inside a `<Hotkeys>` element.
 
 ```tsx
-import { Hotkey, Hotkeys, HotkeysTarget } from "@blueprintjs/core";
+import { Hotkey, Hotkeys, HotkeysTarget } from "@blueprint-modernized/core";
 import * as React from "react";
 
 @HotkeysTarget

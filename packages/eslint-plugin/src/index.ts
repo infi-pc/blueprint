@@ -21,10 +21,10 @@ import rules from "./rules";
 module.exports = {
     configs: {
         recommended: {
-            plugins: ["@blueprintjs"],
+            plugins: ["@blueprint-modernized"],
             rules: {
-                "@blueprintjs/classes-constants": "error",
-                "@blueprintjs/html-components": "error",
+                "@blueprint-modernized/classes-constants": "error",
+                "@blueprint-modernized/html-components": "error",
             },
         },
     },

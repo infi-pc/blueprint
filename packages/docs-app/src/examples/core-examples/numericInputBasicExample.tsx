@@ -25,7 +25,7 @@ import {
     NumericInput,
     Position,
     Switch,
-} from "@blueprintjs/core";
+} from "@blueprint-modernized/core";
 import {
     Example,
     handleBooleanChange,
@@ -33,7 +33,7 @@ import {
     handleStringChange,
     handleValueChange,
     IExampleProps,
-} from "@blueprintjs/docs-theme";
+} from "@blueprint-modernized/docs-theme";
 
 import { IntentSelect } from "./common/intentSelect";
 import { LOCALES } from "./common/locales";

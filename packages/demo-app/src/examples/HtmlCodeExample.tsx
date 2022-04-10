@@ -14,7 +14,7 @@ limitations under the License.*/
 
 import * as React from "react";
 
-import { Code } from "@blueprintjs/core";
+import { Code } from "@blueprint-modernized/core";
 
 import { ExampleCard } from "./ExampleCard";
 

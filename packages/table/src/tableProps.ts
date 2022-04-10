@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import type { Props } from "@blueprintjs/core";
+import type { Props } from "@blueprint-modernized/core";
 
 import type { IColumnProps } from "./column";
 import type { FocusedCellCoordinates } from "./common/cellTypes";

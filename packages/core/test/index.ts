@@ -13,7 +13,7 @@
  * limitations under the License.
  */
 
-import "@blueprintjs/test-commons/bootstrap";
+import "@blueprint-modernized/test-commons/bootstrap";
 
 // components
 import "./alert/alertTests";

@@ -17,7 +17,7 @@
 import classNames from "classnames";
 import * as React from "react";
 
-import { EditableText, IntentProps, Props } from "@blueprintjs/core";
+import { EditableText, IntentProps, Props } from "@blueprint-modernized/core";
 
 import * as Classes from "../common/classes";
 

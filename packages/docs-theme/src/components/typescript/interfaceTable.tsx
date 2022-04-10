@@ -26,7 +26,7 @@ import {
 import classNames from "classnames";
 import * as React from "react";
 
-import { Classes, Intent, Props, Tag } from "@blueprintjs/core";
+import { Classes, Intent, Props, Tag } from "@blueprint-modernized/core";
 
 import { DocumentationContextTypes, IDocumentationContext } from "../../common/context";
 import { ModifierTable } from "../modifierTable";
@@ -41,7 +41,7 @@ export interface IInterfaceTableProps extends Props {
 }
 
 // rendered inside RUNNING_TEXT
-/* eslint-disable @blueprintjs/html-components */
+/* eslint-disable @blueprint-modernized/html-components */
 export class InterfaceTable extends React.PureComponent<IInterfaceTableProps> {
     public static contextTypes = DocumentationContextTypes;
 

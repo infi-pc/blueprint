@@ -20,7 +20,7 @@ import * as React from "react";
 import ReactDayPicker from "react-day-picker";
 import * as sinon from "sinon";
 
-import { Button, Classes as CoreClasses, HTMLSelect, Menu, MenuItem } from "@blueprintjs/core";
+import { Button, Classes as CoreClasses, HTMLSelect, Menu, MenuItem } from "@blueprint-modernized/core";
 
 import { Classes, DatePicker, IDatePickerModifiers, IDatePickerProps, TimePicker, TimePrecision } from "../src";
 import * as DateUtils from "../src/common/dateUtils";

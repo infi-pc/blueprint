@@ -17,7 +17,7 @@
 import classNames from "classnames";
 import * as React from "react";
 
-import { AbstractPureComponent2, DISPLAYNAME_PREFIX, Props } from "@blueprintjs/core";
+import { AbstractPureComponent2, DISPLAYNAME_PREFIX, Props } from "@blueprint-modernized/core";
 
 import * as Classes from "./common/classes";
 import * as DateUtils from "./common/dateUtils";

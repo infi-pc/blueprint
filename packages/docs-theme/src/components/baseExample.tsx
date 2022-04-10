@@ -17,7 +17,7 @@
 import classNames from "classnames";
 import * as React from "react";
 
-import { Utils } from "@blueprintjs/core";
+import { Utils } from "@blueprint-modernized/core";
 
 export const WARNING_BASE_EXAMPLE_DEPRECATED = `[Blueprint] BaseExample is deprecated and will be removed in the next beta. Compose new Example component instead of extending BaseExample.`;
 

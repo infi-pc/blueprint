@@ -17,9 +17,9 @@
 import moment from "moment";
 import * as React from "react";
 
-import { Radio, RadioGroup } from "@blueprintjs/core";
-import { DateFormatProps } from "@blueprintjs/datetime";
-import { handleNumberChange } from "@blueprintjs/docs-theme";
+import { Radio, RadioGroup } from "@blueprint-modernized/core";
+import { DateFormatProps } from "@blueprint-modernized/datetime";
+import { handleNumberChange } from "@blueprint-modernized/docs-theme";
 
 export interface IFormatSelectProps {
     /** Selected formatter. */

@@ -16,8 +16,8 @@
 
 import * as React from "react";
 
-import { Radio, RadioGroup } from "@blueprintjs/core";
-import { Example, handleStringChange } from "@blueprintjs/docs-theme";
+import { Radio, RadioGroup } from "@blueprint-modernized/core";
+import { Example, handleStringChange } from "@blueprint-modernized/docs-theme";
 
 import { CheckboxExample } from "./checkboxExample";
 

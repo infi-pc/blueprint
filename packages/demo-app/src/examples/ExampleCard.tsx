@@ -15,7 +15,7 @@ limitations under the License.*/
 import classNames from "classnames";
 import * as React from "react";
 
-import { Card, Classes, H4, H5 } from "@blueprintjs/core";
+import { Card, Classes, H4, H5 } from "@blueprint-modernized/core";
 
 export interface ExampleCardProps {
     label: string;

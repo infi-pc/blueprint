@@ -14,7 +14,7 @@ limitations under the License.*/
 
 import * as React from "react";
 
-import { EditableText, H1 } from "@blueprintjs/core";
+import { EditableText, H1 } from "@blueprint-modernized/core";
 
 import { ExampleCard } from "./ExampleCard";
 

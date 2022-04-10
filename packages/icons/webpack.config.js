@@ -15,7 +15,7 @@
 
 const path = require("path");
 
-const { baseConfig, COMMON_EXTERNALS } = require("@blueprintjs/webpack-build-scripts");
+const { baseConfig, COMMON_EXTERNALS } = require("@blueprint-modernized/webpack-build-scripts");
 
 module.exports = Object.assign({}, baseConfig, {
     entry: {

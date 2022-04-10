@@ -45,7 +45,7 @@ ruleTester.run("html-components", htmlComponentsRule, {
                 },
             ],
             output: dedent`
-                import { H1 } from "@blueprintjs/core";
+                import { H1 } from "@blueprint-modernized/core";
 
                 <H1 />
             `,
@@ -61,7 +61,7 @@ ruleTester.run("html-components", htmlComponentsRule, {
                 },
             ],
             output: dedent`
-                import { H1 } from "@blueprintjs/core";
+                import { H1 } from "@blueprint-modernized/core";
 
                 <H1>Text</H1>
             `,
@@ -77,7 +77,7 @@ ruleTester.run("html-components", htmlComponentsRule, {
                 },
             ],
             output: dedent`
-                import { Pre } from "@blueprintjs/core";
+                import { Pre } from "@blueprint-modernized/core";
 
                 <Pre>block</Pre>
             `,
@@ -93,7 +93,7 @@ ruleTester.run("html-components", htmlComponentsRule, {
                 },
             ],
             output: dedent`
-                import { HTMLTable } from "@blueprintjs/core";
+                import { HTMLTable } from "@blueprint-modernized/core";
 
                 <HTMLTable>table element</HTMLTable>
             `,

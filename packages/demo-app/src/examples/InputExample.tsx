@@ -14,7 +14,7 @@ limitations under the License.*/
 
 import * as React from "react";
 
-import { InputGroup, Intent, NumericInput } from "@blueprintjs/core";
+import { InputGroup, Intent, NumericInput } from "@blueprint-modernized/core";
 
 import { ExampleCard } from "./ExampleCard";
 

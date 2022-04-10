@@ -7,8 +7,8 @@ Deprecated: use [ContextMenu2](#popover2-package/context-menu2)
 
 </h4>
 
-This API is **deprecated since @blueprintjs/core v3.39.0** in favor of the new
-ContextMenu2 component available in the `@blueprintjs/popover2` package. You should migrate
+This API is **deprecated since @blueprint-modernized/core v3.39.0** in favor of the new
+ContextMenu2 component available in the `@blueprint-modernized/popover2` package. You should migrate
 to the new API which will become the standard in Blueprint v5.
 
 </div>
@@ -45,7 +45,7 @@ If the instance has a `onContextMenuClose` method, the decorator will call this 
 the context menu is closed.
 
 ```tsx
-import { ContextMenuTarget, Menu, MenuItem } from "@blueprintjs/core";
+import { ContextMenuTarget, Menu, MenuItem } from "@blueprint-modernized/core";
 
 @ContextMenuTarget
 class RightClickMe extends React.Component {
@@ -73,7 +73,7 @@ class RightClickMe extends React.Component {
 If you're using Blueprint in Javascript, and don't have access to the Babel config (ie: using `create-react-app`), you won't be able to just use the decorator. You can, instead, use it as a [Higher-Order Component][react-hoc], and get to keep all the benefits of `ContextMenuTarget`:
 
 ```jsx
-import { ContextMenuTarget, Menu, MenuItem } from "@blueprintjs/core";
+import { ContextMenuTarget, Menu, MenuItem } from "@blueprint-modernized/core";
 
 const RightClickMe = ContextMenuTarget(class RightClickMeWithContext extends React.Component {
     render() {
@@ -124,7 +124,7 @@ for programmatically triggered menus or for non-React apps.
     Whether a context menu is currently visible.
 
 ```ts
-import { ContextMenu, Menu, MenuItem } from "@blueprintjs/core";
+import { ContextMenu, Menu, MenuItem } from "@blueprint-modernized/core";
 
 const rightClickMe = document.querySelector("#right-click-me") as HTMLElement;
 rightClickMe.oncontextmenu = (e: MouseEvent) => {

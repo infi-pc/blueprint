@@ -2,7 +2,7 @@
 // Licensed under the Apache License, Version 2.0.
 
 @use "sass:math";
-@import "~@blueprintjs/core/src/common/variables";
+@import "~@blueprint-modernized/core/src/common/variables";
 
 $svg-icon-size: 36px;
 
@@ -41,7 +41,7 @@ $icons-per-row: 5;
     opacity: 0;
     transform: scale(1);
     transition: transform $pt-transition-duration $pt-transition-ease,
-                opacity $pt-transition-duration $pt-transition-ease;
+      opacity $pt-transition-duration $pt-transition-ease;
   }
 
   &:hover::before {

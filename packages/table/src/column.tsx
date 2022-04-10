@@ -16,7 +16,7 @@
 
 import * as React from "react";
 
-import { DISPLAYNAME_PREFIX, Props } from "@blueprintjs/core";
+import { DISPLAYNAME_PREFIX, Props } from "@blueprint-modernized/core";
 
 import { emptyCellRenderer, CellRenderer } from "./cell/cell";
 import { ColumnHeaderRenderer } from "./headers/columnHeader";

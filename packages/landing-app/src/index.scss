@@ -5,10 +5,10 @@ Licensed under the Apache License, Version 2.0.
 
 */
 
-@import "~@blueprintjs/core/lib/css/blueprint.css";
-@import "~@blueprintjs/icons/lib/css/blueprint-icons.css";
-@import "~@blueprintjs/colors/lib/scss/colors";
-@import "~@blueprintjs/core/src/common/variables";
+@import "~@blueprint-modernized/core/lib/css/blueprint.css";
+@import "~@blueprint-modernized/icons/lib/css/blueprint-icons.css";
+@import "~@blueprint-modernized/colors/lib/scss/colors";
+@import "~@blueprint-modernized/core/src/common/variables";
 @import "svgs";
 
 $body-background-color: $black;
@@ -128,12 +128,10 @@ footer {
 
 .landing-copyright {
   &::before {
-    background-image: linear-gradient(
-      90deg,
-      rgba($white, 0) 0%,
-      rgba($white, 0.3) 50%,
-      rgba($white, 0) 100%
-    );
+    background-image: linear-gradient(90deg,
+        rgba($white, 0) 0%,
+        rgba($white, 0.3) 50%,
+        rgba($white, 0) 100%);
     content: "";
     display: block;
     height: 1px;

@@ -24,7 +24,7 @@ import {
     IRef,
     UseHotkeysReturnValue,
     Utils as CoreUtils,
-} from "@blueprintjs/core";
+} from "@blueprint-modernized/core";
 
 import { Column, ColumnProps } from "./column";
 import type { FocusedCellCoordinates } from "./common/cellTypes";

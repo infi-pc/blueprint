@@ -16,9 +16,9 @@
 
 import * as React from "react";
 
-import { Alignment, Button, ButtonGroup, H5, IconName, Switch } from "@blueprintjs/core";
-import { Example, handleBooleanChange, IExampleProps } from "@blueprintjs/docs-theme";
-import { Popover2 } from "@blueprintjs/popover2";
+import { Alignment, Button, ButtonGroup, H5, IconName, Switch } from "@blueprint-modernized/core";
+import { Example, handleBooleanChange, IExampleProps } from "@blueprint-modernized/docs-theme";
+import { Popover2 } from "@blueprint-modernized/popover2";
 
 import { AlignmentSelect } from "./common/alignmentSelect";
 import { FileMenu } from "./common/fileMenu";

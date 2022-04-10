@@ -18,7 +18,7 @@ import { ITsTypeAlias } from "@documentalist/client";
 import classNames from "classnames";
 import * as React from "react";
 
-import { Props } from "@blueprintjs/core";
+import { Props } from "@blueprint-modernized/core";
 
 import { DocumentationContextTypes, IDocumentationContext } from "../../common/context";
 import { ApiHeader } from "./apiHeader";

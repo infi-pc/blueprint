@@ -17,7 +17,7 @@
 import classNames from "classnames";
 import * as React from "react";
 
-import { IRef } from "@blueprintjs/core";
+import { IRef } from "@blueprint-modernized/core";
 
 import * as Classes from "../common/classes";
 import { ColumnIndices } from "../common/grid";

@@ -21,7 +21,7 @@ import * as ReactDOM from "react-dom";
 import * as TestUtils from "react-dom/test-utils";
 import * as sinon from "sinon";
 
-import { IRef } from "@blueprintjs/core";
+import { IRef } from "@blueprint-modernized/core";
 
 import * as Classes from "../../src/common/classes";
 import { Grid } from "../../src/common/grid";

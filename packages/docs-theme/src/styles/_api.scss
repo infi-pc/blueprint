@@ -1,7 +1,7 @@
 // Copyright 2017 Palantir Technologies, Inc. All rights reserved.
 // Licensed under the Apache License, Version 2.0.
 
-@import "~@blueprintjs/core/src/common/react-transition";
+@import "~@blueprint-modernized/core/src/common/react-transition";
 @import "variables";
 
 .docs-api-drawer {
@@ -16,7 +16,7 @@
     flex: 0 0 auto;
     padding: $pt-grid-size ($pt-grid-size * 2);
 
-    + .docs-section {
+    +.docs-section {
       flex-shrink: 0;
       padding-left: $pt-grid-size * 2;
       padding-right: $pt-grid-size * 2;

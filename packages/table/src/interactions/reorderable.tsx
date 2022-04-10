@@ -16,7 +16,7 @@
 
 import * as React from "react";
 
-import { Utils as CoreUtils } from "@blueprintjs/core";
+import { Utils as CoreUtils } from "@blueprint-modernized/core";
 
 import type { FocusedCellCoordinates } from "../common/cellTypes";
 import { Utils } from "../common/utils";

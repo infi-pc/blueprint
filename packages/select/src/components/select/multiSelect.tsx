@@ -30,7 +30,7 @@ import {
     TagInputAddMethod,
     refHandler,
     setRef,
-} from "@blueprintjs/core";
+} from "@blueprint-modernized/core";
 
 import { Classes, IListItemsProps } from "../../common";
 import { IQueryListRendererProps, QueryList } from "../query-list/queryList";

@@ -17,7 +17,7 @@
 import { isTsClass, isTsEnum, isTsInterface, isTsTypeAlias, ITag, ITypescriptPluginData } from "@documentalist/client";
 import * as React from "react";
 
-import { Props } from "@blueprintjs/core";
+import { Props } from "@blueprint-modernized/core";
 
 import { DocumentationContextTypes, IDocumentationContext } from "../common/context";
 import { EnumTable } from "../components/typescript/enumTable";

@@ -16,8 +16,8 @@
 
 import * as React from "react";
 
-import { Classes, Icon, Menu, MenuDivider, MenuItem } from "@blueprintjs/core";
-import { Example, IExampleProps } from "@blueprintjs/docs-theme";
+import { Classes, Icon, Menu, MenuDivider, MenuItem } from "@blueprint-modernized/core";
+import { Example, IExampleProps } from "@blueprint-modernized/docs-theme";
 
 export class MenuExample extends React.PureComponent<IExampleProps> {
     public render() {

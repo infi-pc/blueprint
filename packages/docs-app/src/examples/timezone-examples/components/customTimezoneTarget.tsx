@@ -16,9 +16,9 @@
 
 import * as React from "react";
 
-import { Colors, Icon, Intent } from "@blueprintjs/core";
-import { Tooltip2 } from "@blueprintjs/popover2";
-import { getTimezoneMetadata } from "@blueprintjs/timezone";
+import { Colors, Icon, Intent } from "@blueprint-modernized/core";
+import { Tooltip2 } from "@blueprint-modernized/popover2";
+import { getTimezoneMetadata } from "@blueprint-modernized/timezone";
 
 export interface ICustomTimezonePickerTargetProps {
     timezone: string;

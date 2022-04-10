@@ -2,7 +2,7 @@
 // Licensed under the Apache License, Version 2.0.
 
 @use "sass:math";
-@import "~@blueprintjs/icons/lib/scss/variables";
+@import "~@blueprint-modernized/icons/lib/scss/variables";
 
 $palette-spacing: $pt-grid-size * 2;
 $palette-border-radius: 4px;
@@ -18,7 +18,7 @@ $swatch-copied-message: "#{map-get($blueprint-icon-codepoints, "tick")} Copied t
 }
 
 .docs-clipboard {
-  > input {
+  >input {
     opacity: 0;
     position: absolute;
   }
@@ -28,12 +28,12 @@ $swatch-copied-message: "#{map-get($blueprint-icon-codepoints, "tick")} Copied t
     line-height: 1;
   }
 
-  input:focus + .docs-clipboard-message::after,
+  input:focus+.docs-clipboard-message::after,
   &:hover .docs-clipboard-message::after {
     content: $swatch-hover-message;
   }
 
-  input:focus + .docs-clipboard-message[data-hover-message]::after,
+  input:focus+.docs-clipboard-message[data-hover-message]::after,
   &:hover .docs-clipboard-message[data-hover-message]::after {
     content: attr(data-hover-message);
   }
@@ -48,6 +48,7 @@ $swatch-copied-message: "#{map-get($blueprint-icon-codepoints, "tick")} Copied t
   &.docs-clipboard-copied .docs-clipboard-message[data-copied-message]::after {
     content: attr(data-copied-message) !important;
   }
+
   /* stylelint-enable declaration-no-important */
 }
 
@@ -67,7 +68,7 @@ $swatch-copied-message: "#{map-get($blueprint-icon-codepoints, "tick")} Copied t
   box-shadow: $pt-elevation-shadow-0;
   transition: all $pt-transition-duration $pt-transition-ease;
 
-  input:focus + &,
+  input:focus+&,
   &:hover {
     box-shadow: $pt-elevation-shadow-3;
     cursor: pointer;
@@ -95,12 +96,19 @@ $swatch-copied-message: "#{map-get($blueprint-icon-codepoints, "tick")} Copied t
       box-shadow: $pt-dark-elevation-shadow-1;
     }
 
-    pre { box-shadow: none; }
+    pre {
+      box-shadow: none;
+    }
   }
 }
 
-label.docs-color-scheme-label { margin: ($pt-grid-size * 2) 0; }
-.docs-color-scheme-radios { margin-bottom: $pt-grid-size; }
+label.docs-color-scheme-label {
+  margin: ($pt-grid-size * 2) 0;
+}
+
+.docs-color-scheme-radios {
+  margin-bottom: $pt-grid-size;
+}
 
 .docs-color-bar-hexes {
   background: $white;
@@ -159,20 +167,20 @@ label.docs-color-scheme-label { margin: ($pt-grid-size * 2) 0; }
     border-bottom-width: 1px;
   }
 
-  input:focus + .docs-color-swatch-trigger,
+  input:focus+.docs-color-swatch-trigger,
   &:hover .docs-color-swatch-trigger {
     @include position-all(absolute, $swatch-hover-offset);
     border-radius: $pt-border-radius;
     box-shadow: inset border-shadow($pt-border-shadow-opacity * 2),
-                      0 2px 4px rgba($black, $pt-drop-shadow-opacity * 50%),
-                      0 8px 24px rgba($black, $pt-drop-shadow-opacity);
+      0 2px 4px rgba($black, $pt-drop-shadow-opacity * 50%),
+      0 8px 24px rgba($black, $pt-drop-shadow-opacity);
     z-index: $pt-z-index-base + 1;
   }
 
   &:active .docs-color-swatch-trigger {
     @include position-all(absolute, $swatch-hover-offset * 0.5);
     box-shadow: inset border-shadow($pt-border-shadow-opacity * 2),
-                0 1px 1px rgba($black, $pt-drop-shadow-opacity);
+      0 1px 1px rgba($black, $pt-drop-shadow-opacity);
   }
 
   .#{$ns}-dark & {
@@ -180,13 +188,13 @@ label.docs-color-scheme-label { margin: ($pt-grid-size * 2) 0; }
 
     &:hover .docs-color-swatch-trigger {
       box-shadow: inset border-shadow($pt-dark-border-shadow-opacity, $color: $white),
-                  0 2px 4px rgba($black, $pt-dark-drop-shadow-opacity * 50%),
-                  0 8px 24px rgba($black, $pt-dark-drop-shadow-opacity);
+        0 2px 4px rgba($black, $pt-dark-drop-shadow-opacity * 50%),
+        0 8px 24px rgba($black, $pt-dark-drop-shadow-opacity);
     }
 
     &:active .docs-color-swatch-trigger {
       box-shadow: inset border-shadow($pt-dark-border-shadow-opacity, $color: $white),
-                  0 1px 1px rgba($black, $pt-dark-drop-shadow-opacity);
+        0 1px 1px rgba($black, $pt-dark-drop-shadow-opacity);
     }
   }
 }
@@ -206,7 +214,9 @@ label.docs-color-scheme-label { margin: ($pt-grid-size * 2) 0; }
   white-space: nowrap;
 
   // ClickToCopy uses ::after element for variable name so we re-order in flexbox
-  span { order: 1; }
+  span {
+    order: 1;
+  }
 }
 
 .docs-color-bar-swatches {
@@ -247,8 +257,7 @@ label.docs-color-scheme-label { margin: ($pt-grid-size * 2) 0; }
   }
 }
 
-$aliases: (
-  intent-primary: $pt-intent-primary,
+$aliases: (intent-primary: $pt-intent-primary,
   intent-success: $pt-intent-success,
   intent-warning: $pt-intent-warning,
   intent-danger: $pt-intent-danger,
@@ -282,7 +291,8 @@ $aliases: (
   dark-code-background-color: $pt-dark-code-background-color,
 );
 
-@each $alias, $color in $aliases {
+@each $alias,
+$color in $aliases {
   .alias-#{$alias} {
     background-color: $color;
   }

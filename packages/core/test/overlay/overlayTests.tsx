@@ -19,7 +19,7 @@ import { mount, ReactWrapper, shallow } from "enzyme";
 import * as React from "react";
 import { spy } from "sinon";
 
-import { dispatchMouseEvent } from "@blueprintjs/test-commons";
+import { dispatchMouseEvent } from "@blueprint-modernized/test-commons";
 
 import { Classes, OverlayProps, Overlay, Portal, Utils } from "../../src";
 import * as Keys from "../../src/common/keys";

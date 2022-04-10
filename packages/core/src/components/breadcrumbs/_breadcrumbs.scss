@@ -1,7 +1,7 @@
 // Copyright 2016 Palantir Technologies, Inc. All rights reserved.
 // Licensed under the Apache License, Version 2.0.
 
-@import "~@blueprintjs/icons/lib/scss/variables";
+@import "~@blueprint-modernized/icons/lib/scss/variables";
 @import "../../common/variables";
 
 /*
@@ -31,7 +31,7 @@ Styleguide breadcrumbs
   padding: 0;
 
   // descendant selector because nothing should come between ul and li
-  > li {
+  >li {
     align-items: center;
     display: flex;
 
@@ -114,12 +114,13 @@ Styleguide breadcrumbs
 }
 
 .#{$ns}-dark {
+
   .#{$ns}-breadcrumb,
   .#{$ns}-breadcrumbs-collapsed {
     color: $pt-dark-text-color-muted;
   }
 
-  .#{$ns}-breadcrumbs > li::after {
+  .#{$ns}-breadcrumbs>li::after {
     color: $pt-dark-icon-color;
   }
 

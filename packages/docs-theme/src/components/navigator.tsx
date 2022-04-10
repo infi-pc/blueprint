@@ -18,8 +18,8 @@ import { IHeadingNode, IPageNode } from "@documentalist/client";
 import { filter } from "fuzzaldrin-plus";
 import * as React from "react";
 
-import { Classes, Icon, InputGroupProps2, MenuItem } from "@blueprintjs/core";
-import { ItemListPredicate, ItemRenderer, Omnibar } from "@blueprintjs/select";
+import { Classes, Icon, InputGroupProps2, MenuItem } from "@blueprint-modernized/core";
+import { ItemListPredicate, ItemRenderer, Omnibar } from "@blueprint-modernized/select";
 
 import { eachLayoutNode } from "../common/utils";
 

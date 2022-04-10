@@ -16,8 +16,8 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 
-import { docsData } from "@blueprintjs/docs-data";
-import { createDefaultRenderers, ReactDocsTagRenderer, ReactExampleTagRenderer } from "@blueprintjs/docs-theme";
+import { docsData } from "@blueprint-modernized/docs-data";
+import { createDefaultRenderers, ReactDocsTagRenderer, ReactExampleTagRenderer } from "@blueprint-modernized/docs-theme";
 
 import { BlueprintDocs } from "./components/blueprintDocs";
 import * as ReactDocs from "./tags/reactDocs";

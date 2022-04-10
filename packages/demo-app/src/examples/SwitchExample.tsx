@@ -14,7 +14,7 @@ limitations under the License.*/
 
 import * as React from "react";
 
-import { Switch } from "@blueprintjs/core";
+import { Switch } from "@blueprint-modernized/core";
 
 import { ExampleCard } from "./ExampleCard";
 

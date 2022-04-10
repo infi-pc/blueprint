@@ -29,7 +29,7 @@ import {
     mergeRefs,
     Overlay,
     Utils,
-} from "@blueprintjs/core";
+} from "@blueprint-modernized/core";
 
 import * as Classes from "./classes";
 import * as Errors from "./errors";

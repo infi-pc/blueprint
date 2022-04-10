@@ -14,7 +14,7 @@ limitations under the License.*/
 
 import * as React from "react";
 
-import { Classes, Tooltip2 } from "@blueprintjs/popover2";
+import { Classes, Tooltip2 } from "@blueprint-modernized/popover2";
 
 import { ExampleCard } from "./ExampleCard";
 

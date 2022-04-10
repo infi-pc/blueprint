@@ -24,7 +24,7 @@ import {
     Props,
     Utils as CoreUtils,
     mergeRefs,
-} from "@blueprintjs/core";
+} from "@blueprint-modernized/core";
 
 import * as Classes from "./classes";
 import { Popover2Props, Popover2 } from "./popover2";

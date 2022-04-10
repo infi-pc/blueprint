@@ -18,7 +18,7 @@ import { IHeadingNode, IPageData, IPageNode, isPageNode, ITsDocBase, linkify } f
 import classNames from "classnames";
 import * as React from "react";
 
-import { Classes, Drawer, FocusStyleManager, HotkeysTarget2, Props } from "@blueprintjs/core";
+import { Classes, Drawer, FocusStyleManager, HotkeysTarget2, Props } from "@blueprint-modernized/core";
 
 import { DocumentationContextTypes, hasTypescriptData, IDocsData, IDocumentationContext } from "../common/context";
 import { eachLayoutNode } from "../common/utils";

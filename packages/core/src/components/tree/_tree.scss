@@ -3,7 +3,7 @@
 
 @import "../../common/variables";
 @import "../../common/mixins";
-@import "~@blueprintjs/icons/lib/scss/variables";
+@import "~@blueprint-modernized/icons/lib/scss/variables";
 
 /*
 Trees
@@ -48,7 +48,8 @@ $tree-icon-spacing: ($tree-row-height - $pt-icon-size-standard) * 0.5 !default;
   #{$icon-classes} {
     color: $pt-icon-color;
 
-    @each $intent, $colors in $pt-intent-colors {
+    @each $intent,
+    $colors in $pt-intent-colors {
       &.#{$ns}-intent-#{$intent} {
         @include intent-color($intent);
       }
@@ -152,7 +153,7 @@ $tree-icon-spacing: ($tree-row-height - $pt-icon-size-standard) * 0.5 !default;
   }
 }
 
-.#{$ns}-tree-node.#{$ns}-tree-node-selected > .#{$ns}-tree-node-content {
+.#{$ns}-tree-node.#{$ns}-tree-node-selected>.#{$ns}-tree-node-content {
   background-color: $pt-intent-primary;
 
   &,
@@ -180,7 +181,8 @@ $tree-icon-spacing: ($tree-row-height - $pt-icon-size-standard) * 0.5 !default;
     #{$icon-classes} {
       color: $pt-dark-icon-color;
 
-      @each $intent, $colors in $pt-intent-colors {
+      @each $intent,
+      $colors in $pt-intent-colors {
         &.#{$ns}-intent-#{$intent} {
           @include intent-color($intent);
         }
@@ -188,7 +190,7 @@ $tree-icon-spacing: ($tree-row-height - $pt-icon-size-standard) * 0.5 !default;
     }
   }
 
-  .#{$ns}-tree-node.#{$ns}-tree-node-selected > .#{$ns}-tree-node-content {
+  .#{$ns}-tree-node.#{$ns}-tree-node-selected>.#{$ns}-tree-node-content {
     background-color: $pt-intent-primary;
   }
 }

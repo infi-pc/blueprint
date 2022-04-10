@@ -5,7 +5,7 @@
 const fs = require("fs");
 const path = require("path");
 
-const webpackBuildScripts = require("@blueprintjs/webpack-build-scripts");
+const webpackBuildScripts = require("@blueprint-modernized/webpack-build-scripts");
 
 const coreManifest = require("../core/package.json");
 
@@ -132,7 +132,7 @@ function getCoreStylesheetPath(dirname) {
     if (fs.existsSync(localCorePath)) {
         return path.join(localCorePath, coreManifest.style);
     } else {
-        // resolves to "**/node_modules/@blueprintjs/core/lib/cjs/index.js"
-        return path.join(require.resolve("@blueprintjs/core"), "../../../", coreManifest.style);
+        // resolves to "**/node_modules/@blueprint-modernized/core/lib/cjs/index.js"
+        return path.join(require.resolve("@blueprint-modernized/core"), "../../../", coreManifest.style);
     }
 }
