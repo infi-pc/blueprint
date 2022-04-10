@@ -26,6 +26,7 @@
         "dist": "run-s dist:libs dist:apps",
         "dist:libs": "lerna run dist --parallel --scope \"@blueprint-modernized/{colors,core,datetime,docs-theme,icons,popover2,select,table,timezone}\"",
         "dist:apps": "lerna run dist --parallel --scope \"@blueprint-modernized/{docs-app,landing-app,table-dev-app,demo-app}\"",
+        "dist:docs": "lerna run dist --parallel --scope \"@blueprint-modernized/docs-app\"",
         "docs-data": "lerna run compile --scope \"@blueprint-modernized/docs-data\"",
         "format": "prettier --write \"./**/*.{ts,tsx,json}\"",
         "format-check": "prettier --check \"./**/*.{ts,tsx,json}\"",
