@@ -57,6 +57,7 @@ $dark-options-background-color: $dark-gray5;
   // https://css-tricks.com/flexbox-truncated-text/#article-header-id-3
   min-width: 0;
   padding: $example-spacing * 0.5;
+  border: 1px solid rgb(229, 231, 235);
 
   .#{$ns}-dark & {
     background: $dark-example-background-color;
@@ -68,11 +69,12 @@ $dark-options-background-color: $dark-gray5;
 }
 
 .docs-example-options {
-  background-color: $options-background-color;
+  background-color: white;
   border-radius: $example-frame-border-radius;
   flex: 0 0 auto;
   padding: $pt-grid-size * 2;
   text-align: left;
+  border: 1px solid rgb(229, 231, 235);
 
   .#{$ns}-heading:not(:first-child) {
     margin-top: $pt-grid-size;

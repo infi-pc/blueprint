@@ -11,8 +11,8 @@
   -moz-appearance: none;
   -webkit-appearance: none;
   border-radius: $pt-border-radius;
-  height: $pt-button-height;
-  padding: 0 ($input-padding-horizontal * 2.5) 0 $input-padding-horizontal;
+  height: 38px;
+  padding: 8px 12px;
   // fill parent container
   width: 100%;
   /* stylelint-enable property-no-vendor-prefix */
@@ -44,7 +44,7 @@
   pointer-events: none;
   position: absolute;
   right: $input-padding-horizontal * 0.7;
-  top: ($pt-button-height - $pt-icon-size-standard) * 0.5;
+  top: 11px;
 
   &.#{$ns}-disabled {
     color: $pt-icon-color-disabled;

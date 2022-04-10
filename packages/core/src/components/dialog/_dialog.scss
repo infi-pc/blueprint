@@ -62,7 +62,7 @@ $dialog-padding: $pt-grid-size * 2 !default;
 }
 
 .#{$ns}-dialog {
-  background: $light-gray4;
+  background: white;
   border-radius: $dialog-border-radius;
   box-shadow: $pt-dialog-box-shadow;
   display: flex;

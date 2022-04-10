@@ -116,6 +116,21 @@ export class ButtonsExample extends React.PureComponent<IExampleProps, IButtonsE
                         text={iconOnly ? undefined : "Duplicate this page"}
                         small={size === "small"}
                         large={size === "large"}
+                        intent="none"
+                    />
+                </div>
+                <div>
+                    <p>
+                        <Code>AnchorButton</Code>
+                    </p>
+                    <AnchorButton
+                        href="#core/components/button"
+                        icon="duplicate"
+                        rightIcon="share"
+                        target="_blank"
+                        text={iconOnly ? undefined : "Duplicate this page"}
+                        small={size === "small"}
+                        large={size === "large"}
                         {...buttonProps}
                     />
                 </div>

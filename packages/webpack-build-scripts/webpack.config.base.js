@@ -93,7 +93,14 @@ const scssLoaders = [
             },
         },
     },
-    require.resolve("sass-loader"),
+    {
+        loader: require.resolve("sass-loader"),
+        options: {
+            sassOptions: {
+                functions: require("@blueprintjs/core/scripts/sass-custom-functions"),
+            },
+        },
+    },
 ];
 
 module.exports = {

@@ -192,7 +192,7 @@ Styleguide control-group
 
   &:not(.#{$ns}-vertical) {
     > :not(:last-child) {
-      margin-right: 2px;
+      margin-right: 8px;
     }
   }
 
