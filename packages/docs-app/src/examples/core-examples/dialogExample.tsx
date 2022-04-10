@@ -133,7 +133,7 @@ function ButtonWithDialog({
                 {includeFooter ? (
                     <DialogFooter handleClose={handleClose} />
                 ) : (
-                    <div style={{ margin: "0 20px" }}>
+                    <div style={{ margin: "0 24px" }}>
                         <VisitFoundryWebsiteAnchorButton fill={true} />
                     </div>
                 )}
