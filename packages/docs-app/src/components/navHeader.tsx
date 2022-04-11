@@ -51,11 +51,11 @@ export class NavHeader extends React.PureComponent<INavHeaderProps> {
                         </a>
                         <div>
                             <NavbarHeading className="docs-heading">
-                                <span>Blueprint</span> {this.renderVersionsMenu()}
+                                <span>Blueprint <strong>modernized</strong></span> {this.renderVersionsMenu()}
                             </NavbarHeading>
                             <a
                                 className={Classes.TEXT_MUTED}
-                                href="https://github.com/palantir/blueprint"
+                                href="https://github.com/infi-pc/blueprint"
                                 target="_blank"
                             >
                                 <small>View on GitHub</small>

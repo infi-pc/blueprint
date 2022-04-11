@@ -3,8 +3,7 @@
 
 $pkg-icon-width: 24px;
 
-$package-colors: (
-  "blueprint": ($gray1, $black),
+$package-colors: ("blueprint": ($gray1, $black),
   "core": ($blue3, $blue2),
   "datetime": ($red3, $red2),
   "icons": ($gold4, $gold3),
@@ -14,8 +13,7 @@ $package-colors: (
   "resources": ($orange3, $orange2),
 );
 
-$dark-package-colors: (
-  "blueprint": ($gray3, $white),
+$dark-package-colors: ("blueprint": ($gray3, $white),
   "core": ($blue4, $blue5),
   "datetime": ($red4, $red5),
   "icons": ($gold4, $gold5),
@@ -40,7 +38,7 @@ $dark-package-colors: (
   }
 
   svg {
-    fill: $dark-gray5;
+    fill: $black;
 
     .#{$ns}-dark & {
       fill: $gray5;
@@ -49,7 +47,7 @@ $dark-package-colors: (
 }
 
 .docs-heading {
-  font-size: $pt-grid-size * 2;
+  font-size: $pt-grid-size * 1.6;
   font-weight: 600;
   margin-right: $pt-grid-size;
 
@@ -107,8 +105,9 @@ $dark-package-colors: (
       /* stylelint-disable max-nesting-depth */
       &:hover,
       &.docs-nav-expanded {
+
         .#{$ns}-menu-item,
-        + .docs-nav-menu .#{$ns}-menu-item.#{$ns}-active {
+        +.docs-nav-menu .#{$ns}-menu-item.#{$ns}-active {
           color: $text-color;
 
           .#{$ns}-dark & {
@@ -133,11 +132,12 @@ $dark-package-colors: (
           }
         }
       }
+
       /* stylelint-enable max-nesting-depth */
     }
   }
 
-  + .docs-nav-menu {
+  +.docs-nav-menu {
     margin-bottom: $pt-grid-size * 0.5;
     margin-left: $pkg-icon-width + $pt-grid-size;
 
@@ -155,7 +155,7 @@ $dark-package-colors: (
   text-transform: uppercase;
 
   // dedent menu under a section title
-  + .docs-nav-menu {
+  +.docs-nav-menu {
     margin-left: 0;
   }
 }
