@@ -47,19 +47,19 @@ $light-gray5: #f7f8f8;
 
 // Overwriting intent variables
 $pt-intent-primary: $indigo3;
-$pt-intent-success: #0f9960;
-$pt-intent-warning: #d9822b;
-$pt-intent-danger: #db3737;
+$pt-intent-success: #16a34a;
+$pt-intent-warning: #ea580c;
+$pt-intent-danger: #dc2626;
 
 $pt-intent-primary1: $indigo1;
-$pt-intent-success1: #0a6640;
-$pt-intent-warning1: #a66321;
-$pt-intent-danger1: #a82a2a;
+$pt-intent-success1: #166534;
+$pt-intent-warning1: #9a3412;
+$pt-intent-danger1: #991b1b;
 
 $pt-intent-primary2: $indigo2;
-$pt-intent-success2: #0d8050;
-$pt-intent-warning2: #bf7326;
-$pt-intent-danger2: #c23030;
+$pt-intent-success2: #15803d;
+$pt-intent-warning2: #c2410c;
+$pt-intent-danger2: #b91c1c;
 
 $pt-intent-text-colors: ("primary": $indigo2,
   "success": #0d8050,
@@ -81,9 +81,9 @@ $button-intents: ("primary": ($pt-intent-primary,
     $pt-intent-success2,
     $pt-intent-success1,
   ),
-  "warning": ($pt-intent-success,
-    $pt-intent-success2,
-    $pt-intent-success1,
+  "warning": ($pt-intent-warning,
+    $pt-intent-warning2,
+    $pt-intent-warning1,
   ),
   "danger": ($pt-intent-danger,
     $pt-intent-danger2,

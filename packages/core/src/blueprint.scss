@@ -118,105 +118,105 @@ $tree-intent-icon-colors-modern: ("primary": $blue5,
 }
 
 // Contrast for buttons
-.#{$ns}-button {
+// .#{$ns}-button {
 
-  // Use dark text for warning intent
-  &.#{$ns}-intent-warning {
-    background: $orange5;
-    color: $pt-text-color;
+//   // Use dark text for warning intent
+//   &.#{$ns}-intent-warning {
+//     background: $orange5;
+//     color: $pt-text-color;
 
-    &:not(.#{$ns}-disabled).#{$ns}-icon>svg {
-      fill: rgba($dark-gray1, 0.7);
-    }
+//     &:not(.#{$ns}-disabled).#{$ns}-icon>svg {
+//       fill: rgba($dark-gray1, 0.7);
+//     }
 
-    &:not(.#{$ns}-disabled):not(.#{$ns}-minimal):not(.#{$ns}-outlined) {
-      &:hover {
-        background: $orange4;
-        color: $pt-text-color;
-      }
+//     &:not(.#{$ns}-disabled):not(.#{$ns}-minimal):not(.#{$ns}-outlined) {
+//       &:hover {
+//         background: $orange4;
+//         color: $pt-text-color;
+//       }
 
-      &:active,
-      &.#{$ns}-active {
-        background: $orange3;
-        color: $pt-text-color;
-      }
-    }
+//       &:active,
+//       &.#{$ns}-active {
+//         background: $orange3;
+//         color: $pt-text-color;
+//       }
+//     }
 
-    &:disabled,
-    &.#{$ns}-disabled {
-      background: rgba($orange3, 0.5);
-      color: rgba($dark-gray1, 0.35);
+//     &:disabled,
+//     &.#{$ns}-disabled {
+//       background: rgba($orange3, 0.5);
+//       color: rgba($dark-gray1, 0.35);
 
-      .#{$ns}-dark & {
-        color: rgba($dark-gray1, 0.6);
-      }
-    }
+//       .#{$ns}-dark & {
+//         color: rgba($dark-gray1, 0.6);
+//       }
+//     }
 
-    &.#{$ns}-minimal,
-    &.#{$ns}-outlined {
-      background: none;
+//     &.#{$ns}-minimal,
+//     &.#{$ns}-outlined {
+//       background: none;
 
-      .#{$ns}-dark & {
-        &:not(.#{$ns}-disabled).#{$ns}-icon>svg {
-          fill: $orange5;
-        }
-      }
-    }
-  }
+//       .#{$ns}-dark & {
+//         &:not(.#{$ns}-disabled).#{$ns}-icon>svg {
+//           fill: $orange5;
+//         }
+//       }
+//     }
+//   }
 
-  &.#{$ns}-minimal {
-    @mixin pt-button-minimal-intent-modern($active-text-color) {
-      &:active:not(:disabled):not(.#{$ns}-disabled) {
-        color: $active-text-color;
-      }
-    }
+//   &.#{$ns}-minimal {
+//     @mixin pt-button-minimal-intent-modern($active-text-color) {
+//       &:active:not(:disabled):not(.#{$ns}-disabled) {
+//         color: $active-text-color;
+//       }
+//     }
 
-    @each $intent,
-    $colors in $button-intents {
-      &.#{$ns}-intent-#{$intent} {
-        @include pt-button-minimal-intent-modern(map-get($button-active-minimal-intent-text-modern, $intent),
-        );
-      }
-    }
+//     @each $intent,
+//     $colors in $button-intents {
+//       &.#{$ns}-intent-#{$intent} {
+//         @include pt-button-minimal-intent-modern(map-get($button-active-minimal-intent-text-modern, $intent),
+//         );
+//       }
+//     }
 
-    .#{$ns}-dark & {
-      &:not([class*="#{$ns}-intent-"]):not(:disabled):not(.#{$ns}-disabled) {
-        color: $white;
-      }
+//     .#{$ns}-dark & {
+//       &:not([class*="#{$ns}-intent-"]):not(:disabled):not(.#{$ns}-disabled) {
+//         color: $white;
+//       }
 
-      @each $intent,
-      $color in $dark-minimal-button-intents-modern {
-        &.#{$ns}-intent-#{$intent} {
-          @include pt-button-minimal-dark-intent-modern($color...);
-        }
-      }
-    }
-  }
-}
+//       @each $intent,
+//       $color in $dark-minimal-button-intents-modern {
+//         &.#{$ns}-intent-#{$intent} {
+//           @include pt-button-minimal-dark-intent-modern($color...);
+//         }
+//       }
+//     }
+//   }
+// }
 
-// Contrast for callouts
-.#{$ns}-callout {
-  background-color: rgba($gray3, 0.15);
+// // Contrast for callouts
+// .#{$ns}-callout {
+//   background-color: rgba($gray3, 0.15);
 
-  .#{$ns}-dark & {
-    background-color: rgba($gray3, 0.2);
+//   .#{$ns}-dark & {
+//     background-color: rgba($gray3, 0.2);
 
-    &.#{$ns}-callout-icon:not([class*="#{$ns}-intent-"])>.#{$ns}-icon:first-child {
-      color: $pt-dark-icon-color;
-    }
-  }
+//     &.#{$ns}-callout-icon:not([class*="#{$ns}-intent-"])>.#{$ns}-icon:first-child {
+//       color: $pt-dark-icon-color;
+//     }
+//   }
 
-  @each $intent,
-  $color in $pt-intent-colors {
-    &.#{$ns}-intent-#{$intent} {
-      background-color: rgba($color, 0.1);
+//   @each $intent,
+//   $color in $pt-intent-colors {
+//     &.#{$ns}-intent-#{$intent} {
+//       background-color: rgba($color, 0.1);
 
-      .#{$ns}-dark & {
-        background-color: rgba($color, 0.2);
-      }
-    }
-  }
-}
+//       .#{$ns}-dark & {
+//         background-color: rgba($color, 0.2);
+//       }
+//     }
+//   }
+// }
 
 // Contrast for checkboxes and radio buttons - no overrides necessary, modern colors are now built-in
 
