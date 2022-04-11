@@ -1,6 +1,7 @@
 @# Blueprint modernized
 
-#### Blueprint modernized is fork or Bluepring
+#### Blueprint-modernized is an unofficial fork of Blueprint 
+
 ### Blueprint is a React-based UI toolkit for the web.
 
 It is optimized for building complex data-dense interfaces for desktop applications.
